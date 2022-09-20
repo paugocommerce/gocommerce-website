@@ -4,147 +4,131 @@ import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';
 import Link from 'next/link';
 import * as Icon from 'react-feather';
+import dynamic from 'next/dynamic';
+const OwlCarousel = dynamic(import('react-owl-carousel3'));
+
+const options = {
+    items: 5,
+    loop: false,
+    nav: false,
+    dots: false,
+    margin: 15,
+    autoplay: false,
+    smartSpeed: 1000,
+    stagePadding: 30,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1200: {
+            items: 4
+        },
+        1500: {
+            items: 5
+        }
+    }
+}
+
  
 const Services1 = () => {
+    const [display, setDisplay] = React.useState(false);
+
+    React.useEffect(() => {
+        setDisplay(true);
+    }, [])
     return (
         <>
             <Navbar />
 
-            <PageBanner pageTitle="Services Style One" />
+            
 
-            <div className="services-area-two pt-80 pb-50 bg-f9f6f6">
+            <div className="services-page pt-80 pb-50 ">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Our Services</h2>
-                        <div className="bar"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h2 className='services-page-main'><span>Our Services</span></h2>
+                        <h2 className='services-page-title'>Enterprise Services at GoCommerce</h2>
+                        <p className='services-page-desc'>
+                        GoCommerce is more than a technology platform — it’s backed by a team of ecommerce experts driven to see your business maximize success, from one stage of growth to the next, providing the strategy, support, and tools to get you there.</p>
                     </div>
 
-                    <div className="row justify-content-center">
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon">
-                                    <Icon.Settings />
-                                </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Incredible Infrastructure</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
+                    
+                    {display ? <OwlCarousel 
+                        className="team-slider owl-carousel owl-theme owl-theme-style"
+                        {...options}
+                    > 
 
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon">
-                                    <Icon.Mail />
+                    <div class="row">
+                    <div class="col-md-2 col-4">
+                    <img 
+                        src='/images/services-slider-image-1.png'
+                        className='branding' 
+                        alt="branding" 
+                                    />
+                    </div>
+                    <div class="col-md-10 col-8 slider-container">
+                        <h6 className='slider-title'>BRANDING</h6>
+                        <p className='slider-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-2 col-4">
+                    <img 
+                        src='/images/services-slider-image-1.png'
+                        className='branding' 
+                        alt="branding" 
+                                    />
+                    </div>
+                    <div class="col-md-10 col-8 slider-container">
+                        <h6 className='slider-title'>BRANDING</h6>
+                        <p className='slider-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    </div>
+                    </OwlCarousel> : ''}
+                    <div className='services-card'>
+                        <div className="container-fluid">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-3 col-sm-6 col-md-6 remove-padding">
+                                    <div className="single-ml-projects-box">
+                                        <img src="/images/services-image.png" alt="image" />
+                                    
+                                    </div>
+                                     <h3 className='services-image-title'>
+                                     GOCOMMERCE BRAND
+                                            
+                                        </h3>
+                                        <p className='services-image-desc'>Ominichannel Ecommerce Management, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    
                                 </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Email Notifications</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon">
-                                    <Icon.Bell />
+                                <div className="col-lg-3 col-sm-6 col-md-6 remove-padding">
+                                    <div className="single-ml-projects-box">
+                                        <img src="/images/services-image-2.png" alt="image" />
+                                    
+                                    </div>
+                                     <h3 className='services-image-title'>
+                                     GOCOM X
+                                            
+                                        </h3>
+                                        <p className='services-image-desc'>Performance and In Platform Marketing Livestream and Design Lab</p>
+                                    
                                 </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Best Analytics Audits</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-c679e3">
-                                    <Icon.Grid />
+                                <div className="col-lg-3 col-sm-6 col-md-6 remove-padding">
+                                    <div className="single-ml-projects-box">
+                                        <img src="/images/services-images-3.png" alt="image" />
+                                    
+                                    </div>
+                                     <h3 className='services-image-title'>
+                                     the trusted name in order fulfillment
+                                            
+                                        </h3>
+                                        <p className='services-image-desc'>5-star actual consumer feedback in Lazada and Shopee on great order fulfillment experiences as of June 2021 for eCommerce online orders. Highlighting Secure Storage
+Order Fulfillment Automation, Mid-Mile Logistics, and Last Mile Delivery</p>
+                                    
                                 </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Simple Dashboard</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
                             </div>
-                        </div>
 
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-c679e3">
-                                    <Icon.Info />
-                                </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Information Retrieval</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-c679e3">
-                                    <Icon.HardDrive />
-                                </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Deep Technical SEO</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-eb6b3d">
-                                    <Icon.MousePointer />
-                                </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Drag & Drop Functionality</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-eb6b3d">
-                                    <Icon.Bell />
-                                </div> 
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Deadline Reminders</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-sm-6">
-                            <div className="single-services-box">
-                                <div className="icon bg-eb6b3d">
-                                    <Icon.Send />
-                                </div>
-                                <h3>
-                                    <Link href="/service-details">
-                                        <a>Modern Keyword Analysis</a>
-                                    </Link>
-                                </h3>
-                                <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
                         </div>
                     </div>
                 </div>

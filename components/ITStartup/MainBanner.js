@@ -10,16 +10,17 @@ const MainBanner = () => {
 						<div className="row h-100 justify-content-center align-items-center">
 							<div className="col-lg-5">
 								<div className="hero-content">
-									<h1>Secure IT Solutions for a more secure environment</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
+									<h1><span>Fast-scaling</span></h1>
+                                    <h1 className='omnichannel'><span>Omnichannel eCommerce</span></h1>
+									<p>GoCommerce is an eCommerce strategy and management company that helps brands accelerate the growth of their eCommerce business.</p>
 									
 									<Link href="/contact">
-										<a className="btn btn-primary">Get Started</a>
+										<a className=" float-start get-started">GROW WITH US</a>
 									</Link>
 								</div>
 							</div>
 
-							<div className="col-lg-6 offset-lg-1">
+							{/* <div className="col-lg-6 offset-lg-1">
 								<div className="banner-image">
                                     <img 
                                         src='/images/banner-image/man.png' 
@@ -111,14 +112,14 @@ const MainBanner = () => {
                                         alt="main-pic"
                                     />
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
 			</div>
 
             {/* Shape Images */}
-			<div className="shape1">
+			{/* <div className="shape1">
 				<img src="/images/shape1.png" alt="shape"/>
 			</div>
 			<div className="shape2 rotateme">
@@ -141,7 +142,7 @@ const MainBanner = () => {
 			</div>
 			<div className="shape8 rotateme">
 				<img src="/images/shape2.svg" alt="shape"/>
-			</div>
+			</div> */}
 		</div>
     )
 }

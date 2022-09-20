@@ -19,15 +19,246 @@ $value_seven: 1550px;
     .ptb-80 {
         padding: {
             top: 50px;
-            bottom: 50px;
+            bottom: 10px;
         }
     }
     .section-title {
         margin-bottom: 40px;
+        .ship-go-white-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            color: #0D1A26;
+
+        }
+        .ship-go-white-desc {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+            color: #131313;
+            margin-top: 10px;
+        }
+        .contact-page-title {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 24px;
+            color: #fff;
+            text-align: left;
+            padding-top: 70px;
+            padding-left: 15px;
+        }
+        .contact-page-desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            text-align: left;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-right: 15px;
+        }
+        .contact-page-hr {
+            margin-top: 50px;
+	        border-top: 2px solid #57E49E;
+            opacity: 1;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+        .contact-form-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: #0D1A26;
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+        .contact-form-desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #5C6670;
+            text-align: left;
+            padding-left: 15px;
+            margin-top: 10px;
+            padding-right: 15px;
+
+        }
+        .contact-form-label {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 24px;
+            color: #5C6670;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: left;
+            margin-top: 25px;
+        }
+        .services-page-main {
+            font-size: 32px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 20px;
+            
+
+            span {
+                background-color: #0ACF83;
+                color: #fff;
+                padding: 5px 10px;
+            }
+        }
+        .services-page-title {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: left;
+            color: #fff;
+            
+        }
+        .services-page-desc {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 15px;
+            font-weight: 400;
+            text-align: left;
+            color: #fff;
+            
+        }
 
         h2 {
-            font-size: 20px;
+            font-size: 16px;
+            text-transform: none;
+            .our-mission {
+                color: #0ACF83;
+                font-size: 16px;
+                text-transform: none;
+            }
         }
+        .our-mission-below {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 25px;
+            span {
+                color: #0ACF83;
+            }
+        }
+        .our-mission-desc {
+            padding: 15px 25px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .velocity-image {
+            margin-top: 20px;
+        }
+        .gocom-brands {
+            margin-top: 10px;
+            color: #0D1A26;
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: none;
+            
+        }
+        .gocom-recognition {
+            
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: left;
+            
+
+            span {
+                background-color: #0ACF83;
+                color: #fff;
+            }
+            
+        }
+        .gocom-recognition-desc {
+            margin-bottom: 30px;
+            color: #fff;
+            text-align: left;
+            font-weight: 500;
+            padding-left: 15px;
+        }
+        .gocom-framework {
+            font-size: 35px;
+            font-weight: 700;
+            color: #0D1A26;
+            line-height: 45px !important;
+           
+
+        }
+        .gocom-framework-desc {
+            margin-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #0D1A26;
+        }
+        .about-us-title {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: left;
+            
+            
+
+            span {
+                padding: 2px 5px;
+                background-color: #0ACF83;
+                color: #fff;
+            }
+        }
+        .story-title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .about-us-desc { 
+            color: #fff;
+            font-size: 16px;
+        }
+        .gocom-values {
+            color: #fff;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .gocom-values-below {
+            font-size: 80px;
+            color: #BFBFBF;
+            letter-spacing: 5px;
+            font-weight: 700;
+            span {
+                background:-webkit-linear-gradient( #57E49E, #00AAB9);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .gocom-values-accountabilities {
+            background:-webkit-linear-gradient( #57E49E, #00AAB9);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: -8px;
+        }
+        .gocom-values-desc {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
     }
     .owl-theme {
         .owl-dots {
@@ -39,6 +270,59 @@ $value_seven: 1550px;
                     height: 12px;
                     margin: 0 3px;
                 }
+            }
+        }
+    }
+
+    .why-gocommerce-main-banner {
+        height: 100%;
+        padding: {
+            top: 150px;
+            bottom: 250px;
+        }
+        
+        .hero-content {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 80px;
+            .ship-go-desc {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 120%;
+                color: #FFFFFF;
+                margin-top: 30px;
+            }
+            
+            .ship-go-image {
+                margin-top: -18px;
+                max-width: 60% !important;
+                margin-right: 6px;
+            }
+            .ship-go {
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 43px;
+                color: #FFFFFF;
+            }
+            .ship-go-get-started {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 10px 50px;
+                gap: 10px;
+                color: #fff;
+                width: 220px;
+                height: 44px;
+                border: 1px solid rgba(10, 207, 131, 0.8);
+                margin-top: 50px;
+            }
+            
+            .ship-go-get-started:hover {
+
+                background-color: #0ACF83;
+                border: 1px solid #0ACF83;
+                color: #fff;
             }
         }
     }
@@ -55,10 +339,61 @@ $value_seven: 1550px;
             margin-bottom: 45px;
             text-align: center;
 
+            .ship-go {
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 43px;
+                color: #FFFFFF;
+            }
+
             h1 {
-                font-size: 25px;
+                font-size: 21px;
                 line-height: 30px;
                 margin-bottom: 15px;
+                font-weight: 600;
+
+                span {
+                    background-color: #0ACF83;
+                }
+            }
+            .omnichannel {
+                margin-top: -5px;
+                font-size: 21px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                font-weight: 600;
+                padding: 0px;
+
+                span {
+                    padding: 3px 8px;
+                    background-color: #0ACF83;
+                }
+            }
+            p {
+                margin-bottom: 30px;
+                color: #fff;
+                text-align: left;
+                font-weight: 500;
+                padding-left: 5px;
+            }
+            .get-started {
+                background-color: #0ACF83;
+            border: 1px solid #0ACF83;
+            color: #fff;
+                width: 220px;
+                letter-spacing: 2px;
+    
+                &:hover, &:focus, &:active {
+                background-color: #0ACF83;
+                border: 1px solid #0ACF83;
+                color: #fff;
+                }
+            }
+            .get-started:hover {
+
+                background-color: #0ACF83;
+                border: 1px solid #0ACF83;
+                color: #fff;
             }
         }
         .banner-image {
@@ -133,6 +468,7 @@ $value_seven: 1550px;
             font-size: 17px;
         }
     }
+   
 
     .domain-search-content {
         h2 {
@@ -194,9 +530,82 @@ $value_seven: 1550px;
         }
     }
 
+    .aimbig {
+        margin-top: -2px;
+    }
+
     .services-content {
+        margin-bottom: 50px;
         .box {
             margin-top: 20px;
+        }
+        .grow-with-us {
+            padding: 10px 15px;
+            background-color: transparent;
+            border: 1px solid #0ACF83;
+            color: #0ACF83;
+            width: 220px;
+            letter-spacing: 2px;
+            text-align: center;
+            justify-content: center;
+            opacity: 1;
+        }
+        .join-with-us {
+            padding: 10px 15px;
+            background-color: transparent;
+            border: 1px solid #0ACF83;
+            color: #0ACF83;
+            width: 220px;
+            letter-spacing: 2px;
+            text-align: center;
+            justify-content: center;
+            opacity: 1;
+            margin-top: 15px;
+        }
+        hr {
+            margin-top: 40px;
+	        border-top: 2px solid #57E49E;
+            opacity: 1;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+        }
+        .end-to-end {
+            font-weight: 700;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 30px;
+            
+        }
+        .end-to-end-list {
+            padding-left: 30px;
+            padding-right: 15px;
+            .verticalLine:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 20px;
+                height: 25px;
+                background: url('../images/text-left-line.png') center no-repeat;
+                background-size: contain;
+                position: absolute;
+                left: -24px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .verticalLine {
+                padding-right: 15px;
+                position:relative;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.3;
+                margin-top: 15px;
+            }
+                
         }
     }
     .services-right-image {
@@ -281,10 +690,41 @@ $value_seven: 1550px;
             margin-top: 20px;
         }
     }
+    
     .single-team {
         padding: {
             top: 30px;
-            bottom: 30px;
+            bottom: 0px;
+        }
+
+        .omnichannel-image {
+            padding-left: 30px;
+            padding-right: 30px;
+            
+        }
+        .gocom-omnichannel {
+            text-align: left;
+            color:#fff;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 65px;
+            padding-left: 15px;
+        }
+        .gocom-omnichannel-title {
+            text-align: left;
+            color:#fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 25px;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .gocom-omnichannel-desc {
+            text-align: left;
+            color:#fff;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .team-image {
@@ -311,6 +751,7 @@ $value_seven: 1550px;
             }
         }
     }
+    
 
     .funfact {
         margin-bottom: 30px;
@@ -1846,11 +2287,12 @@ $value_seven: 1550px;
     }
     
     .footer-area {
-        padding-top: 50px;
+        padding-top: 0px;
     }
     .single-footer-widget {
         padding: 0 !important;
         margin-bottom: 30px;
+        
 
         h3 {
             font-size: 17px;
@@ -2089,9 +2531,25 @@ $value_seven: 1550px;
     }
     .startp-nav {
         nav {
+            .navbar-brand {
+                padding-left: 15px;
+            }
+            .navbar-brand2 {
+                padding-left: 15px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .navbar-toggler {
+                padding-right: 15px;
+            }
             .navbar-collapse {
-                max-height: 70vh;
-                overflow-y: scroll;
+                min-height: 100vh;
+                overflow-y: hidden;
+                background: rgba(2, 107, 141, 0.8);
+                position: sticky;
+                margin-top: -60px;
+                width: 100% !important;
+                
 
                 &::-webkit-scrollbar {
                     width: 8px;
@@ -2109,9 +2567,12 @@ $value_seven: 1550px;
             }
             .navbar-nav {
                 .nav-item {
-                    padding: 5px 0;
+                    padding: 10px 30px;
                     > a {
                         margin: 0 0 5px;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 24px;
                         svg {
                             display: none;
                         }
@@ -2286,6 +2747,15 @@ $value_seven: 1550px;
     .about-area {
         .container-fluid {
             max-width: 540px;
+        }
+        .container {
+            .row {
+                .about-content-container{
+                    .about-content {
+                        padding-left: 15px;
+                    }
+                }
+            }
         }
     }
 
@@ -2598,6 +3068,13 @@ $value_seven: 1550px;
     .services-details-area {
         .separate {
             margin-top: 40px;
+        }
+    }
+    .features-area {
+        .container {
+            .brand-logo {
+                margin-top: 30px;
+            }
         }
     }
 

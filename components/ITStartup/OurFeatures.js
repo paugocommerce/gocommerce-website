@@ -4,99 +4,42 @@ import * as Icon from 'react-feather';
 
 const OurFeatures = () => {
     return (
-        <div className="features-area pt-80 pb-50 bg-f7fafd">
+        <div className="features-area pt-80 pb-50 ">
             <div className="container">
                 <div className="section-title">
-                    <h2>Our Features</h2>
-                    <div className="bar"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2 className='gocom-brands'>We’re grateful to work with these incredible brands.</h2>
                 </div>
-
-                <div className="row">
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon">
-                                <Icon.Settings />
-                            </div>
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Incredible Infrastructure</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                <div className="row justify-content-center logo-container">
+                    <div className="col-lg-2 col-md-3 col-4 brand-logo">
+                        <img src="/images/logo-garmin.png" alt="partner" />
                     </div>
-
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon">
-                                <Icon.Mail />
-                            </div> 
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Email Notifications</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                    <div className="col-lg-2 col-md-3 col-4 brand-logo">
+                        <img src="/images/logo-nutriasia.png" alt="partner" />
                     </div>
-
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon bg-c679e3">
-                                <Icon.Grid />
-                            </div>
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Simple Dashboard</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                    <div className="col-lg-2 col-md-3 col-4 brand-logo">
+                        <img src="/images/logo-anker.png" alt="partner" />
                     </div>
-
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon bg-c679e3">
-                                <Icon.Info />
-                            </div>
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Information Retrieval</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                    <div className="col-lg-2 col-md-3 col-4  brand-logo">
+                        <img src="/images/logo-nifty.png" alt="partner" />
                     </div>
-
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon bg-eb6b3d">
-                                <Icon.Box />
-                            </div>
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Drag & Drop Functionality</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                    <div className="col-lg-2 col-md-3 col-4  brand-logo">
+                        <img src="/images/logo-nanoleaf.png" alt="partner" />
                     </div>
-
-                    <div className="col-lg-6 col-md-6">
-                        <div className="single-features">
-                            <div className="icon bg-eb6b3d">
-                                <Icon.Bell />
-                            </div>
-                            <h3>
-                                <Link href="/feature-details">
-                                    <a>Deadline Reminders</a>
-                                </Link>
-                            </h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                        </div>
+                    <div className="col-lg-2 col-md-3 col-4 brand-logo">
+                        <img src="/images/logo-eufy.png" alt="partner" />
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-4  brand-logo">
+                        <img src="/images/logo-lav.png" alt="partner" />
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-4  brand-logo">
+                        <img src="/images/logo-soundcore.png" alt="partner" />
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-4 brand-logo">
+                        <img src="/images/logo-kk.png" alt="partner" />
                     </div>
                 </div>
+                  
+               
             </div>
         </div>
     )

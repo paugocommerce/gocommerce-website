@@ -52,28 +52,29 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="contact-area ptb-80">
+        <div className="contact-form-area ptb-80">
             <div className="container">
                 <div className="section-title">
-                    <h2>Get In Touch With Us</h2>
-                    <div className="bar"></div>
-                    <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
+                    <h2 className='contact-form-title'>How can we help you grow?</h2>
+                    
+                    <p className='contact-form-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+
+                    <h2 className='contact-form-label'>US HELP CENTER / SUBMIT A REQUEST </h2>
                 </div>
 
-                <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12">
-                        <img src="/images/contact-img.png" alt="image" />
-                    </div>
+                <div className="row align-items-center contact-form-field">
+                   
 
                     <div className="col-lg-6 col-md-12">
                         <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12">
+                                    <label>Label</label>
                                     <div className="form-group">
                                         <input 
                                             type="text" 
                                             name="name" 
-                                            placeholder="Your Name" 
+                                            placeholder="Placeholder" 
                                             className="form-control" 
                                             value={contact.name}
                                             onChange={handleChange}
@@ -86,11 +87,12 @@ const ContactForm = () => {
                                 </div>
 
                                 <div className="col-lg-12 col-md-12">
+                                    <label>Label</label>
                                     <div className="form-group">
                                         <input 
                                             type="text" 
                                             name="email" 
-                                            placeholder="Your email address" 
+                                            placeholder="Placeholder" 
                                             className="form-control" 
                                             value={contact.email}
                                             onChange={handleChange}
@@ -103,11 +105,12 @@ const ContactForm = () => {
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
+                                    <label>Label</label>
                                     <div className="form-group">
                                         <input 
                                             type="text" 
                                             name="number" 
-                                            placeholder="Your phone number" 
+                                            placeholder="Placeholder" 
                                             className="form-control" 
                                             value={contact.number}
                                             onChange={handleChange}
@@ -120,11 +123,12 @@ const ContactForm = () => {
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
+                                    <label>Label</label>
                                     <div className="form-group">
                                         <input 
                                             type="text" 
                                             name="subject" 
-                                            placeholder="Your Subject" 
+                                            placeholder="Placeholder" 
                                             className="form-control" 
                                             value={contact.subject}
                                             onChange={handleChange}
@@ -136,7 +140,25 @@ const ContactForm = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-12 col-md-12">
+                                <div className="col-lg-6 col-md-6">
+                                    <label>Label</label>
+                                    <div className="form-group">
+                                        <input 
+                                            type="text" 
+                                            name="subject" 
+                                            placeholder="Placeholder" 
+                                            className="form-control" 
+                                            value={contact.subject}
+                                            onChange={handleChange}
+                                            ref={register({ required: true })}
+                                        />
+                                        <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.subject && 'Subject is required.'}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
                                         <textarea 
                                             name="text" 
@@ -151,18 +173,18 @@ const ContactForm = () => {
                                         <div className='invalid-feedback' style={{display: 'block'}}>
                                             {errors.text && 'Message is required.'}
                                         </div>
-                                    </div>
+                                    </div> */}
 
-                                    <div className="form-check">
+                                    {/* <div className="form-check">
                                         <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                         <label className="form-check-label" htmlFor="flexCheckDefault">
                                             By checking this, you agree to our <Link href="/term-condition"><a>Terms</a></Link> and <Link href="/privacy-policy"><a>Privacy policy</a></Link>.
                                         </label>
-                                    </div>
-                                </div>
+                                    </div> */}
+                                {/* </div> */}
             
                                 <div className="col-lg-12 col-sm-12">
-                                    <button type="submit" className="btn btn-primary">Send Message</button>
+                                    <button type="submit" className="btn  btn-contact-form">SUBMIT A REQUEST</button>
                                 </div>
                             </div>
                         </form> 

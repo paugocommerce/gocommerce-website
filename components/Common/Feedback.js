@@ -78,8 +78,8 @@ class Feedback extends React.Component {
     render() {
         const sliderSettings1 = {
             speed: 100,
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 5,
+            slidesToScroll: 5,
             cssEase: 'linear',
             fade: true,
             autoplay: true,

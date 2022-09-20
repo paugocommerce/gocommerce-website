@@ -9,65 +9,41 @@ const Features = () => {
 				<div className="row">
 					<div className="col-lg-3 col-md-6">
 						<div className="single-box">
-							<div className="icon">
-                                <Icon.Server />
-							</div>
-
-							<h3>
-								<Link href="/feature-details">
-									<a>Zero Configuration</a>
-								</Link>
-							</h3>
-
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+							<img 
+								src='/images/investment-removebg.png' 
+								className="animate__animated  animate__bounceInDown animate__delay-0.1s " 
+								alt="man" 
+							/>
 						</div>
 					</div>
-
-					<div className="col-lg-3 col-md-6">
-						<div className="single-box bg-f78acb">
-							<div className="icon">
-                                <Icon.Code />
-							</div>
-
-							<h3>
-								<Link href="/feature-details">
-									<a>Code Security</a>
-								</Link>
-							</h3>
-
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+					<div className="col-lg-6 col-md-12 services-content">
+                        <div className="section-title">
+                            <h2 className='our-mission text-center'>OUR MISSION</h2>
+                            <h1 className='our-mission-below text-center'>Creating the <span>Easiest</span> and <span>Most Pleasurable Online</span> Shopping Experiences</h1>
+							<p className='our-mission-desc text-center'>Leverage our technology and work with our team of experts to unlock </p>										
+                        </div>
+						<div class="text-center">
+						<Link href="/contact">
+							<a className=" grow-with-us text-center">GROW WITH US</a>
+						</Link>
 						</div>
-					</div>
-
-					<div className="col-lg-3 col-md-6">
-						<div className="single-box bg-c679e3">
-							<div className="icon">
-                                <Icon.Users />
-							</div>
-
-							<h3>
-								<Link href="/feature-details">
-									<a>Team Management</a>
-								</Link>
-							</h3>
-
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+						<hr></hr>
+						<div className="section-title">
+							<h2 className='our-mission text-center'>THE VELOCITY FLYWHEEL</h2>
+							<img 
+								src='/images/Velocity-Wheel.png' 
+								className="velocity-image " 
+								alt="man" 
+							/>
 						</div>
-					</div>
-
-					<div className="col-lg-3 col-md-6">
-						<div className="single-box bg-eb6b3d">
-							<div className="icon">
-                                <Icon.GitBranch />
-							</div>
-
-							<h3>
-								<Link href="/feature-details">
-									<a>Access Controlled</a>
-								</Link>
-							</h3>
-
-							<p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+						<hr></hr>
+						<h1 className='end-to-end'>End-to-End eCommerce Growth Partner</h1>
+                        <div className='end-to-end-list'>
+						<p className='verticalLine'>Grow with Our Proven Framework</p>
+						<p className='verticalLine'>Leverage Our Technology</p>
+						<p className='verticalLine'>Advanced Performance Marketing</p>
+						<p className='verticalLine'>Fulfill Orders Better than On Time, All the Time, At Scale</p>
+						<p className='verticalLine'>Total Customer Satisfaction Management</p>
 						</div>
 					</div>
 				</div>
