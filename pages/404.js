@@ -10,7 +10,7 @@ const Custom404 = () => {
 	const router = useRouter()
 
   useEffect(() => {
-    router.replace("/")
+    router.replace("/home")
   })
 
   return null

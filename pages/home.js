@@ -10,7 +10,7 @@ import Footer from "@/components/_App/Footer";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
-const Index = () => {
+const Home = () => {
     return (
         <>
             <MobileView>
@@ -33,4 +33,4 @@ const Index = () => {
     )
 }
 
-export default Index;
+export default Home;
