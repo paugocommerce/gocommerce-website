@@ -516,6 +516,12 @@ Navbar CSS
 .startp-nav nav {
   padding: 0;
 }
+.startp-nav nav .navbar-hr {
+  border-top: 2px solid #fff;
+  opacity: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .startp-nav nav ul {
   padding: 0;
   margin: 0;

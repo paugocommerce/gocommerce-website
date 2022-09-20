@@ -2532,6 +2532,18 @@ $value_seven: 1550px;
     }
     .startp-nav {
         nav {
+            .navbar-hr {
+                
+                border-top: 1px solid #fff;
+                opacity: 1;
+                margin-left: 30px;
+                margin-right: 30px;
+                background-color: none;
+            }
+            .single-footer-widget {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
             .navbar-brand {
                 padding-left: 15px;
             }

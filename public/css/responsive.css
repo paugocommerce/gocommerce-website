@@ -1961,6 +1961,17 @@
   #header.headroom {
     background-color: #ffffff;
   }
+  .startp-nav nav .navbar-hr {
+    border-top: 1px solid #fff;
+    opacity: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: none;
+  }
+  .startp-nav nav .single-footer-widget {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
   .startp-nav nav .navbar-brand {
     padding-left: 15px;
   }

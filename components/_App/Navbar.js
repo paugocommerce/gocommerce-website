@@ -100,6 +100,41 @@ const Navbar = () => {
                                 </li>
                             </ul>
                             <hr className="navbar-hr" />
+                            <div className="single-footer-widget">
+                           
+                            
+                           
+                            <ul className="social-links">
+                                <li> 
+                                    <a href="https://www.facebook.com/" className="facebook" target="_blank">
+                                    <img 
+                                        src='/images/icon-facebook.png' 
+                                        className="social-icon" 
+                                        alt="man" 
+                                    />
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" className="twitter" target="_blank">
+                                    <img 
+                                        src='/images/icon-linkedin.png' 
+                                        className="social-icon" 
+                                        alt="man" 
+                                    />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagramcom/" className="instagram" target="_blank">
+                                    <img 
+                                        src='/images/icon-instagram.png' 
+                                        className="social-icon" 
+                                        alt="man" 
+                                    />
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
                         </div>       
                     </nav>
                 </div>
