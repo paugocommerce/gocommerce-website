@@ -204,11 +204,10 @@
     font-size: 25px;
   }
   .section-title .gocom-values-below {
-    font-size: 80px;
+    font-size: 75px;
     color: #BFBFBF;
     letter-spacing: 5px;
     font-weight: 700;
-    padding-left: 15px;
   }
   .section-title .gocom-values-below span {
     background: -webkit-linear-gradient(#57E49E, #00AAB9);
