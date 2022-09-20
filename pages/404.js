@@ -1,9 +1,13 @@
-import React from 'react'
+import {React, useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 
-const router = useRouter();
+
+
+
+const Custom404 = () => {
+	const router = useRouter();
 
 
 
@@ -11,10 +15,7 @@ useEffect(() => {
  
 	router.push('/');
  
-});
-
-
-const Custom404 = () => {
+},[]);
     return (
 		<div className="error-area">
 			<div className="d-table">
