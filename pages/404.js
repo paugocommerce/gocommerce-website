@@ -13,7 +13,7 @@ const Custom404 = () => {
 
 useEffect(() => {
  
-	router.push('/');
+	window.location.href("/");
  
 },[]);
     return (
