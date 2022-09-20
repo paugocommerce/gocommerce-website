@@ -7,11 +7,13 @@ import { useRouter } from 'next/router';
 
 
 const Custom404 = () => {
-	
-}
+	const router = useRouter()
 
-export const getServerSideProps = () => {
-	return { redirect: { destination: "/", permanent: false } }; 
-  };
+  useEffect(() => {
+    router.replace("/")
+  })
+
+  return null
+}
 
 export default Custom404
