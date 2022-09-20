@@ -1,5 +1,5 @@
 const baseUrl = process.env.NODE_ENV === "production" 
-? 'https://0.0.0.0:3000' 
+? 'http://phpstack-820176-2902242.cloudwaysapps.com' 
 : 'http://localhost:3000';
 
 export default baseUrl;
