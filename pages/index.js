@@ -33,9 +33,7 @@ const Index = () => {
                 <BlogPost /> */}
                 <Footer />
             </MobileView>
-            <BrowserView>
             
-            </BrowserView>
         </>
     )
 }

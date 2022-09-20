@@ -1,14 +1,14 @@
 {
-    "name": "startp",
+    "name": "gocommerce",
     "version": "3.6.0",
-    "description": "StartP - React Next IT Startup & Digital Agency Template",
+    "description": "Gocommerce",
     "main": "index.js",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start"
     },
-    "author": "EnvyTheme.com",
+    "author": "Gocommerce",
     "dependencies": {
         "animate.css": "^4.1.1",
         "axios": "^0.21.4",
