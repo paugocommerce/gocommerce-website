@@ -1,15 +1,81 @@
 import React from 'react';
 import Link from 'next/link';
+import dynamic3 from 'next/dynamic';
+const OwlCarousel3 = dynamic3(import('react-owl-carousel3'));
+
+const options3 = {
+    items: 1,
+    loop: true,
+    nav: false,
+    dots: false,
+    margin: 15,
+    autoplay: true,
+    smartSpeed: 1000,
+    mouseDrag: false,
+    touchDrag: false,
+    
+   
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1200: {
+            items: 4
+        },
+        1500: {
+            items: 5
+        }
+    }
+}
 
 const MainBanner = () => {
+    const [display3, setDisplay3] = React.useState(false);
+
+    React.useEffect(() => {
+        setDisplay3(true);
+    }, [])
+
     return (
 		<div className="main-banner">
+          
 			<div className="d-table">
 				<div className="d-table-cell">
 					<div className="container">
 						<div className="row h-100 justify-content-center align-items-center">
-							<div className="col-lg-5">
+							<div className="col-lg-5 mainbanner-slideshow">
+                   
+                                    <img 
+                                        src='/images/main-banner-bg.png' 
+                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        alt="man" 
+                                    />
+                                    {/* <img 
+                                        src='/images/banner-slideshow-1.png' 
+                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        alt="man" 
+                                    />
+                                    <img 
+                                        src='/images/banner-slideshow-2.png' 
+                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        alt="man" 
+                                    />
+                                    <img 
+                                        src='/images/banner-slideshow-3.png' 
+                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        alt="man" 
+                                    />
+                                    <img 
+                                        src='/images/banner-slideshow-.png' 
+                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        alt="man" 
+                                    /> */}
+              
 								<div className="hero-content">
+                                
+                                
 									<h1><span>Fast-scaling</span></h1>
                                     <h1 className='omnichannel'><span>Omnichannel eCommerce</span></h1>
 									<p>GoCommerce is an eCommerce strategy and management company that helps brands accelerate the growth of their eCommerce business.</p>

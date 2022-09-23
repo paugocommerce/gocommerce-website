@@ -885,6 +885,7 @@ Main Banner CSS
   background: transparent url(/images/main-banner-bg.png) right top no-repeat;
 }
 .main-banner .hero-content {
+  position: relative;
   padding-left: 15px;
   padding-top: 60px;
 }

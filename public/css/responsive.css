@@ -285,30 +285,39 @@
   }
   .main-banner {
     height: 100%;
-    padding-top: 150px;
-    padding-bottom: 80px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-position: center;
   }
-  .main-banner .hero-content {
+  .main-banner .mainbanner-slideshow {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 50px;
+  }
+  .main-banner .mainbanner-slideshow .hero-content {
+    position: absolute;
     margin-bottom: 45px;
     text-align: center;
+    top: 30%;
+    left: 16px;
+    z-index: 9999;
   }
-  .main-banner .hero-content .ship-go {
+  .main-banner .mainbanner-slideshow .hero-content .ship-go {
     font-weight: 500;
     font-size: 35px;
     line-height: 43px;
     color: #FFFFFF;
   }
-  .main-banner .hero-content h1 {
+  .main-banner .mainbanner-slideshow .hero-content h1 {
     font-size: 21px;
     line-height: 30px;
     margin-bottom: 15px;
     font-weight: 600;
   }
-  .main-banner .hero-content h1 span {
+  .main-banner .mainbanner-slideshow .hero-content h1 span {
     background-color: #0ACF83;
   }
-  .main-banner .hero-content .omnichannel {
+  .main-banner .mainbanner-slideshow .hero-content .omnichannel {
     margin-top: -5px;
     font-size: 21px;
     line-height: 30px;
@@ -316,30 +325,30 @@
     font-weight: 600;
     padding: 0px;
   }
-  .main-banner .hero-content .omnichannel span {
+  .main-banner .mainbanner-slideshow .hero-content .omnichannel span {
     padding: 3px 8px;
     background-color: #0ACF83;
   }
-  .main-banner .hero-content p {
+  .main-banner .mainbanner-slideshow .hero-content p {
     margin-bottom: 30px;
     color: #fff;
     text-align: left;
     font-weight: 500;
     padding-left: 5px;
   }
-  .main-banner .hero-content .get-started {
+  .main-banner .mainbanner-slideshow .hero-content .get-started {
     background-color: #0ACF83;
     border: 1px solid #0ACF83;
     color: #fff;
     width: 220px;
     letter-spacing: 2px;
   }
-  .main-banner .hero-content .get-started:hover, .main-banner .hero-content .get-started:focus, .main-banner .hero-content .get-started:active {
+  .main-banner .mainbanner-slideshow .hero-content .get-started:hover, .main-banner .mainbanner-slideshow .hero-content .get-started:focus, .main-banner .mainbanner-slideshow .hero-content .get-started:active {
     background-color: #0ACF83;
     border: 1px solid #0ACF83;
     color: #fff;
   }
-  .main-banner .hero-content .get-started:hover {
+  .main-banner .mainbanner-slideshow .hero-content .get-started:hover {
     background-color: #0ACF83;
     border: 1px solid #0ACF83;
     color: #fff;
@@ -496,6 +505,63 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 30px;
+  }
+  .services-content .faq-accordion {
+    background: #0D1A26 !important;
+  }
+  .services-content .faq-accordion .accordion {
+    padding: 0px 12px;
+  }
+  .services-content .faq-accordion .accordion .accordion__panel {
+    padding: 15px 0px;
+    border-top: none;
+    background-color: #0D1A26;
+    border-bottom: 1px solid #fff;
+  }
+  .services-content .faq-accordion .accordion .accordion__panel p {
+    color: #fff;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+  .services-content .faq-accordion .accordion .accordion__item {
+    box-shadow: none;
+    background: #0D1A26;
+    margin-bottom: 15px;
+    border: none;
+  }
+  .services-content .faq-accordion .accordion .accordion__button {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    background-color: #0D1A26;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .services-content .faq-accordion .accordion__button:before {
+    background: url("../images/text-left-line.png") center no-repeat !important;
+    background-size: contain !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    transform: none !important;
+    background-size: contain;
+    position: absolute;
+    left: -4px;
+    top: 20%;
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 25px;
+  }
+  .services-content .faq-accordion .accordion__button[aria-expanded=true]::before {
+    transform: rotate(90deg) !important;
+    padding-right: 30px;
+    top: 10%;
+  }
+  .services-content .faq-accordion .accordion__button[aria-expanded=true] span {
+    margin-left: 15px;
   }
   .services-content .end-to-end-list {
     padding-left: 30px;
@@ -1966,7 +2032,7 @@
     opacity: 1;
     margin-left: 30px;
     margin-right: 30px;
-    background-color: none;
+    background: none !important;
   }
   .startp-nav nav .single-footer-widget {
     padding-left: 30px !important;

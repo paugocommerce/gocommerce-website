@@ -13,7 +13,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 const Index = () => {
     return (
         <>
-            <MobileView>
+           
                 <Navbar />
                 <MainBanner />
                 <Features />
@@ -27,7 +27,7 @@ const Index = () => {
                 <Partner />
                 <BlogPost /> */}
                 <Footer />
-            </MobileView>
+        
             
         </>
     )
