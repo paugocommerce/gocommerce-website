@@ -7,8 +7,8 @@ const FunFactsArea = () => {
         isMobile? <div className="funfacts-area ptb-80">
             <div className="container">
                 <div className="section-title">
-                    <h2 className='gocom-framework'>We drive Results,</h2>
-                    <h2 className='gocom-framework'>Not just Potential</h2>
+                    <h2 className='gocom-framework'>We drive <span className='highlight'>Results,</span></h2>
+                    <h2 className='gocom-framework'>Not just <span className='highlight'>Potential</span></h2>
                     
                     <p className='gocom-framework-desc'>Our proven frameworks have helped<br/> brands become market<br/> leaders online.</p>
                 </div>

@@ -166,9 +166,9 @@ $value_seven: 1550px;
             text-transform: none;
             .highlight {
                 background: linear-gradient(120deg, #57E49E 0%, #57E49E 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
-    background-position: 0 90%;
+                background-repeat: no-repeat;
+                background-size: 100% 40%;
+                background-position: 0 90%;
             }
             
         }
@@ -199,6 +199,12 @@ $value_seven: 1550px;
             font-weight: 700;
             color: #0D1A26;
             line-height: 45px !important;
+            .highlight {
+                background: linear-gradient(120deg, #57E49E 0%, #57E49E 100%);
+                background-repeat: no-repeat;
+                background-size: 100% 40%;
+                background-position: 0 90%;
+            }
            
 
         }
