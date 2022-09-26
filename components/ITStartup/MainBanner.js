@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import dynamic3 from 'next/dynamic';
-const OwlCarousel3 = dynamic3(import('react-owl-carousel3'));
+import dynamic from 'next/dynamic';
+const OwlCarousel4 = dynamic(import('react-owl-carousel3'));
 
-const options3 = {
+const options4 = {
     items: 1,
     loop: true,
     nav: false,
@@ -11,8 +11,7 @@ const options3 = {
     margin: 15,
     autoplay: true,
     smartSpeed: 1000,
-    mouseDrag: false,
-    touchDrag: false,
+   
     
    
     responsive: {
@@ -32,27 +31,27 @@ const options3 = {
 }
 
 const MainBanner = () => {
-    const [display3, setDisplay3] = React.useState(false);
+    const [display4, setDisplay4] = React.useState(false);
 
     React.useEffect(() => {
-        setDisplay3(true);
+        setDisplay4(true);
     }, [])
 
+
+
     return (
+        
 		<div className="main-banner">
-          
-			<div className="d-table">
-				<div className="d-table-cell">
-					<div className="container">
-						<div className="row h-100 justify-content-center align-items-center">
-							<div className="col-lg-5 mainbanner-slideshow">
-                   
-                                    <img 
+            {display4 ? <OwlCarousel4 
+                className="agency-portfolio-home-slides owl-carousel owl-theme"
+                {...options4}
+            > 
+                 <img 
                                         src='/images/main-banner-bg.png' 
-                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
+                                        className="" 
                                         alt="man" 
                                     />
-                                    {/* <img 
+                                    <img 
                                         src='/images/banner-slideshow-1.png' 
                                         className="animate__animated animate__fadeInDown animate__delay-0.1s" 
                                         alt="man" 
@@ -68,11 +67,18 @@ const MainBanner = () => {
                                         alt="man" 
                                     />
                                     <img 
-                                        src='/images/banner-slideshow-.png' 
+                                        src='/images/banner-slideshow-4.png' 
                                         className="animate__animated animate__fadeInDown animate__delay-0.1s" 
                                         alt="man" 
-                                    /> */}
-              
+                                    />
+            </OwlCarousel4> : ''}
+          
+			<div className="d-table">
+				<div className="d-table-cell">
+					<div className="container">
+						<div className="row h-100 justify-content-center align-items-center">
+							<div className="col-lg-5 mainbanner-slideshow">
+                           
 								<div className="hero-content">
                                 
                                 

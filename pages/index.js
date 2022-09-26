@@ -11,8 +11,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 
 const Index = () => {
-    renderContent = () => {
-        if (isMobile) {
+  
             return ( <> <Navbar />
           <MainBanner />
           <Features />
@@ -22,12 +21,9 @@ const Index = () => {
           <Footer />
           </>
             )
-        }
-        return ( <> <div> </div> </> )
-      }
-    
+        
+       
       
-        return this.renderContent();
       
     
         

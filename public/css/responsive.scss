@@ -330,15 +330,27 @@ $value_seven: 1550px;
 
     .main-banner {
         height: 100%;
+        margin-top: 20px;
         padding: {
-            top: 0px;
+            top: 50px;
             bottom: 0px;
         }
-        background-position: center;
+     
+            .owl-carousel {
+             .owl-stage-outer {
+             
+                background: #fff !important;
+                opacity: 0.5 !important;
+                z-index: 3 !important;
+            }
+        }
+        
+        
+        
         .mainbanner-slideshow{
             padding-left: 0px !important;
             padding-right: 0px !important;
-            padding-top: 50px;
+            padding-top: 0px;
             
         .hero-content {
             position: absolute;
@@ -406,6 +418,7 @@ $value_seven: 1550px;
             }
         }
     }
+    .main-banner
         .banner-image {
             text-align: center;
 

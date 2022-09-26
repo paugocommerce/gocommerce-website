@@ -26,6 +26,7 @@
         "react-owl-carousel3": "^2.2.5",
         "react-redux": "^7.2.6",
         "react-slick": "^0.28.1",
+        "react-slideshow-image": "^4.0.5",
         "react-tabs": "^3.2.3",
         "react-toast-notifications": "^2.5.1",
         "redux": "^3.6.0",

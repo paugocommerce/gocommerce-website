@@ -285,14 +285,19 @@
   }
   .main-banner {
     height: 100%;
-    padding-top: 0px;
+    margin-top: 20px;
+    padding-top: 50px;
     padding-bottom: 0px;
-    background-position: center;
+  }
+  .main-banner .owl-carousel .owl-stage-outer {
+    background: #fff !important;
+    opacity: 0.5 !important;
+    z-index: 3 !important;
   }
   .main-banner .mainbanner-slideshow {
     padding-left: 0px !important;
     padding-right: 0px !important;
-    padding-top: 50px;
+    padding-top: 0px;
   }
   .main-banner .mainbanner-slideshow .hero-content {
     position: absolute;
@@ -353,14 +358,14 @@
     border: 1px solid #0ACF83;
     color: #fff;
   }
-  .main-banner .banner-image {
+  .main-banner .main-banner .banner-image {
     text-align: center;
   }
-  .main-banner .banner-image img {
+  .main-banner .main-banner .banner-image img {
     display: none;
     position: relative;
   }
-  .main-banner .banner-image img:last-child {
+  .main-banner .main-banner .banner-image img:last-child {
     display: block;
     left: 0;
     right: 0;
