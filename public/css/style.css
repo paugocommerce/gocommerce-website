@@ -2173,6 +2173,55 @@ Features CSS
 .features-area .container .brand-logo {
   margin-top: 20px;
 }
+.features-area .container .owl-theme-style.owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  margin-top: -20px;
+  height: 22px;
+  left: 0;
+}
+.features-area .container .owl-theme .owl-nav [class*=owl-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 35px;
+  width: 34px;
+  background-color: #0ACF83;
+  margin-top: -20px;
+}
+.features-area .container .owl-nav .owl-next {
+  padding-right: 30px !important;
+}
+.features-area .container .owl-nav .owl-prev {
+  padding-left: 10px !important;
+}
+.features-area .container .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #0ACF83;
+}
+.features-area .container .owl-nav .prev-slide {
+  background-color: #0ACF83;
+  background-color: #0ACF83;
+  width: 14px;
+  display: inline-block;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  padding: 6px;
+  transform: rotate(135deg);
+}
+.features-area .container .owl-nav .next-slide {
+  background-color: #0ACF83;
+  background-color: #0ACF83;
+  width: 14px;
+  display: inline-block;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  padding: 6px;
+  transform: rotate(-45deg);
+}
 
 .features-area-two {
   overflow: hidden;
