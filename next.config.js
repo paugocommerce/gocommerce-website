@@ -9,13 +9,13 @@ module.exports = {
         locales: ['en', 'ar'],
         defaultLocale: 'en',
     },
-    async redirects() {
-        return [
-          {
-            source: '/',
-            destination: '/home',
-            permanent: true,
-          },
-        ]
-      },
+    // async redirects() {
+    //     return [
+    //       {
+    //         source: '/',
+    //         destination: '/home',
+    //         permanent: true,
+    //       },
+    //     ]
+    //   },
 }

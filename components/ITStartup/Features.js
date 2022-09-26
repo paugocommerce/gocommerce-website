@@ -15,13 +15,13 @@ const Features = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-3 col-md-6">
-						<div className="single-box">
+						{/* <div className="single-box">
 							<img 
 								src='/images/investment-removebg.png' 
 								className="animate__animated  animate__bounceInDown animate__delay-0.1s " 
 								alt="man" 
 							/>
-						</div>
+						</div> */}
 					</div>
 					<div className="col-lg-6 col-md-12 services-content">
                         <div className="section-title">

@@ -11,26 +11,31 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 
 const Index = () => {
-    return (
-        <>
-           
-                <Navbar />
-                <MainBanner />
-                <Features />
-                {/* <ServicesArea /> */}
-                <OurFeatures />
-                <Team />
-                <FunFactsArea />
-                {/* <RecentWorks />
-                <PricingStyleOne />
-                <Feedback />
-                <Partner />
-                <BlogPost /> */}
-                <Footer />
+    renderContent = () => {
+        if (isMobile) {
+            return ( <> <Navbar />
+          <MainBanner />
+          <Features />
+          <OurFeatures />
+          <Team />
+          <FunFactsArea /> 
+          <Footer />
+          </>
+            )
+        }
+        return ( <> <div> </div> </> )
+      }
+    
+      
+        return this.renderContent();
+      
+    
+        
+       
         
             
-        </>
-    )
+        
+   
 }
 
 export default Index;
