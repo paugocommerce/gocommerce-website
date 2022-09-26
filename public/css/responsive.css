@@ -144,6 +144,12 @@
     font-weight: 700;
     text-transform: none;
   }
+  .section-title .gocom-brands .highlight {
+    background: linear-gradient(120deg, #57E49E 0%, #57E49E 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 90%;
+  }
   .section-title .gocom-recognition {
     font-size: 25px;
     line-height: 30px;

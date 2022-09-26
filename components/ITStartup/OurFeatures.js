@@ -43,7 +43,7 @@ const OurFeatures = () => {
         isMobile? <div className="features-area pt-80 pb-50 ">
             <div className="container">
                 <div className="section-title">
-                    <h2 className='gocom-brands'>We’re grateful to work with these incredible brands.</h2>
+                    <h2 className='gocom-brands'>We’re grateful to work with these <span className='highlight'>incredible brands.</span></h2>
                 </div>
                 {display2 ? <OwlCarousel2 
                 className="team-slider owl-carousel owl-theme owl-theme-style"
