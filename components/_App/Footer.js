@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import * as Icon from 'react-feather';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const Footer = () => {
 
@@ -8,7 +9,7 @@ const Footer = () => {
     const [style, setStyle] = useState({display: 'none'});
 
     return (
-        <footer className="footer-area">
+        isMobile ? <footer className="footer-area">
             <div className="container">
                 <div className="row justify-content-center">
                     
@@ -88,7 +89,7 @@ const Footer = () => {
 
             {/* Shape Images */}
           
-        </footer>
+        </footer>: <div></div>
     )
      
 }

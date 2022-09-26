@@ -8,10 +8,11 @@ import {
     AccordionItemPanel,
     AccordionItemButton
 } from 'react-accessible-accordion';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const Features = () => {
     return (
-        <div className="boxes-area">
+        isMobile ? <div className="boxes-area">
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-3 col-md-6">
@@ -134,7 +135,7 @@ const Features = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>: <div></div>
     )
 }
 

@@ -2,6 +2,7 @@ import React from "react"
 import Link from '@/utils/ActiveLink'
 import * as Icon from 'react-feather'
 import { useSelector } from 'react-redux'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const Navbar = () => {
     const cart = useSelector((state) => state.cart)
@@ -10,7 +11,7 @@ const Navbar = () => {
     const toggleNavbar = () => {
         setMenu(!menu)
     }
-
+    if(isMobile) {
     React.useEffect(() => {
         let elementId = document.getElementById("header");
         document.addEventListener("scroll", () => {
@@ -21,11 +22,13 @@ const Navbar = () => {
             }
         });
     })
+}
  
     const classOne = menu ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
     const classTwo = menu ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
     return (
+        isMobile ?
         <header id="header" className="headroom">
             <div className="startp-nav">
                 <div className="container  remove-padding">
@@ -139,7 +142,7 @@ const Navbar = () => {
                     </nav>
                 </div>
             </div>
-        </header>
+        </header> : <div></div>
     );
 }
 

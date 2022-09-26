@@ -1,10 +1,11 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 import Link from 'next/link';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const OurMission = () => {
     return (
-        <div className="boxes-area aimbig">
+        isMobile? <div className="boxes-area aimbig">
 			<div className="container">
 				<div className="row">
 					
@@ -24,7 +25,7 @@ const OurMission = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>: <div></div>
     )
 }
 

@@ -11,14 +11,21 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 
 const Index = () => {
+
+    const [_isMobile, setMobile] = useState();
+
+    useEffect(() => {
+        setMobile(isMobile);
+    }, [setMobile]);
   
-            return ( <> <Navbar />
-          <MainBanner />
-          <Features />
-          <OurFeatures />
-          <Team />
-          <FunFactsArea /> 
-          <Footer />
+            return ( <> <Navbar hidden={!_isMobile} />
+          <MainBanner hidden={!_isMobile} />
+          <Features hidden={!_isMobile} />
+          <OurFeatures hidden={!_isMobile} />
+          <Team  hidden={!_isMobile} />
+          <FunFactsArea hidden={!_isMobile} /> 
+          <Footer hidden={!_isMobile} />
+          <div hidden={_isMobile}> MobileView </div>
           </>
             )
         

@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 import * as Icon from 'react-feather';
 import Link from 'next/link'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const options = {
     items: 5,
@@ -37,7 +38,7 @@ const Team = () => {
     }, [])
 
     return (
-        <div className="team-area ptb-80 ">
+        isMobile? <div className="team-area ptb-80 ">
             <div className="container">
                 <div className="section-title">
                     <h1 className='gocom-recognition'><span>Work with the Best</span></h1>
@@ -69,7 +70,7 @@ const Team = () => {
     
                 
             </OwlCarousel> : ''}
-        </div>
+        </div>: <div></div>
     )
 }
 

@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 import * as Icon from 'react-feather';
 import Link from 'next/link'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const options = {
     items: 5,
@@ -40,7 +41,7 @@ const OmniChannel = () => {
     }, [])
 
     return (
-        <div className="omnichannel-area ">
+        isMobile ? <div className="omnichannel-area ">
             <div className="container">
                 <div className="section-title">
                     
@@ -99,7 +100,7 @@ const OmniChannel = () => {
                 
             </OwlCarousel> : ''}
             <hr className='omnichannel-hr-end'></hr>
-        </div>
+        </div>: <div></div>
     )
 
 

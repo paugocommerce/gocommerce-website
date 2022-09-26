@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const OwlCarousel4 = dynamic(import('react-owl-carousel3'));
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const options4 = {
     items: 1,
@@ -40,7 +41,7 @@ const MainBanner = () => {
 
 
     return (
-        
+        isMobile ?
 		<div className="main-banner">
             {display4 ? <OwlCarousel4 
                 className="agency-portfolio-home-slides owl-carousel owl-theme"
@@ -215,7 +216,7 @@ const MainBanner = () => {
 			<div className="shape8 rotateme">
 				<img src="/images/shape2.svg" alt="shape"/>
 			</div> */}
-		</div>
+		</div>: <div></div>
     )
 }
 

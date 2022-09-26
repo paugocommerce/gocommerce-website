@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 const FunFactsArea = () => {
     return (
-        <div className="funfacts-area ptb-80">
+        isMobile? <div className="funfacts-area ptb-80">
             <div className="container">
                 <div className="section-title">
                     <h2 className='gocom-framework'>We drive Results,</h2>
@@ -54,7 +55,7 @@ const FunFactsArea = () => {
                     <img src="/images/map.png" alt="map" />
                 </div> */}
             </div>
-        </div>
+        </div> : <div></div>
     )
 }
 
