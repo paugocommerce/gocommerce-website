@@ -1,13 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import Navbar from "@/components/_App/Navbar";
-import Footer from "@/components/_App/Footer";
+import dynamic from 'next/dynamic';
+const mobile = require('is-mobile');
+const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/Footer'): import('@/components/_App/DesktopBlank'), { ssr: false })
 
 
 const WhyGocommerce = () => {
     return (
         <>
-            <Navbar />
+            <MobileContentNavbar />
             <div className="why-gocommerce-main-banner">
                 <div className="d-table">
                     <div className="d-table-cell">
@@ -204,7 +206,7 @@ const WhyGocommerce = () => {
                 </div>
                 </div>
             </div>          
-            <Footer />
+            <MobileContentFooter />
         </>
     )
 }

@@ -1,16 +1,17 @@
 import React from 'react';
-import Navbar from "@/components/_App/Navbar";
-import OmniChannel from "@/components/ITStartup/OmniChannel";
-import FunFactsArea from "@/components/Common/FunFactsArea";
-import Partner from "@/components/Common/Partner";
-import Footer from "@/components/_App/Footer";
-import PageBanner from '@/components/Common/PageBanner';
-import OurMission from "@/components/ITStartup/OurMission";
+import dynamic from 'next/dynamic';
+
+const mobile = require('is-mobile');
+
+const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentOmniChannel = dynamic(() => mobile() ? import('@/components/ITStartup/OmniChannel'): import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentOurMission = dynamic(() => mobile() ? import('@/components/ITStartup/OurMission'): import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/Footer'): import('@/components/_App/DesktopBlank'), { ssr: false })
 
 const About1 = () => {
     return (
         <>
-            <Navbar />
+            <MobileContentNavbar />
 
             {/* <PageBanner pageTitle="About Us" /> */}
 
@@ -42,11 +43,11 @@ const About1 = () => {
                 </div>
             </div>
 
-            <OmniChannel />
-            <OurMission />
+            <MobileContentOmniChannel />
+            <MobileContentOurMission />
             
             
-            <Footer />
+            <MobileContentFooter />
         </>
     )
 }

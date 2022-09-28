@@ -1,15 +1,6 @@
 import React from 'react';
-import Navbar from "@/components/_App/Navbar";
-import MainBanner from "@/components/ITStartup/MainBanner";
-import Features from "@/components/ITStartup/Features";
-import OurFeatures from "@/components/ITStartup/OurFeatures";
-import Team from "@/components/Common/Team";
-import FunFactsArea from "@/components/Common/FunFactsArea";
+import dynamic from 'next/dynamic';
 
-import Footer from "@/components/_App/Footer";
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import dynamic from 'next/dynamic'
-import { useUserAgent } from 'next-useragent'
 const mobile = require('is-mobile');
 
 

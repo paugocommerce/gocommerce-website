@@ -1,15 +1,14 @@
 import React from 'react';
-import Navbar from "@/components/_App/Navbar";
-import Footer from "@/components/_App/Footer";
-// import PageBanner from '@/components/Common/PageBanner'; 
-// import ContactInfo from '@/components/Contact/ContactInfo';
-// import GoogleMap from '@/components/Contact/GoogleMap';
-import ContactForm from '@/components/Contact/ContactForm';
+import dynamic from 'next/dynamic';
+const mobile = require('is-mobile');
+const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/Footer'): import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentContactForm = dynamic(() => mobile() ? import('@/components/Contact/ContactForm'): import('@/components/_App/DesktopBlank'), { ssr: false })
 
 const Contact = () => {
     return (
         <>
-            <Navbar />
+            <MobileContentNavbar />
 
             {/* <PageBanner pageTitle="Contact Us" /> */}
             <div className="contact-page pt-80 pb-50 ">
@@ -29,9 +28,9 @@ const Contact = () => {
 
             <GoogleMap /> */}
 
-            <ContactForm />
+            <MobileContentContactForm />
            
-            <Footer />
+            <MobileContentFooter />
         </>
     )
 }

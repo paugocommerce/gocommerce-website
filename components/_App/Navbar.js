@@ -74,14 +74,14 @@ const Navbar = () => {
                         </button>
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <Link href="/about-1">
+                                    <Link href="/about-us">
                                         <a  className="nav-link">
                                             About Us 
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/services-1" >
+                                    <Link href="/services" >
                                         <a  className="nav-link">
                                             Services 
                                         </a>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/contact" >
+                                    <Link href="/contact-us" >
                                         <a  className="nav-link">
                                             Become a Partner 
                                         </a>

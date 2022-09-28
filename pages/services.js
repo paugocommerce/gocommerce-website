@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from "@/components/_App/Navbar";
-import Footer from "@/components/_App/Footer";
-import PageBanner from '@/components/Common/PageBanner';
 import Link from 'next/link';
 import * as Icon from 'react-feather';
 import dynamic from 'next/dynamic';
-const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
+const OwlCarousel = dynamic(import('react-owl-carousel3'));
+const mobile = require('is-mobile');
+const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopBlank'), { ssr: false })
+const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/Footer'): import('@/components/_App/DesktopBlank'), { ssr: false })
 const options = {
     items: 5,
     loop: false,
@@ -32,6 +32,7 @@ const options = {
     }
 }
 
+
  
 const Services1 = () => {
     const [display, setDisplay] = React.useState(false);
@@ -41,9 +42,7 @@ const Services1 = () => {
     }, [])
     return (
         <>
-            <Navbar />
-
-            
+            <MobileContentNavbar />
 
             <div className="services-page pt-80 pb-50 ">
                 <div className="container">
@@ -134,7 +133,7 @@ Order Fulfillment Automation, Mid-Mile Logistics, and Last Mile Delivery</p>
                 </div>
             </div>
  
-            <Footer />
+            <MobileContentFooter />
         </>
     )
 }
