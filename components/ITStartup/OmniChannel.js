@@ -61,7 +61,7 @@ const OmniChannel = () => {
                         alt="lazada-award" 
                                     />
                     <h2 className='gocom-omnichannel-title'>eCommerce Operations</h2>
-                    <p className='gocom-omnichannel-desc'>We build stores, create content and mange the efficient operations of your brand stores across multiple channels</p>
+                    <p className='gocom-omnichannel-desc'>We’re here to help you grow your business. We aim to build more shops, create more content, and manage the efficient operations of your stores across multiple channels. Our commercial, creative and marketing teams work together to execute your vision and mission as a company and increase your brand's visibility.</p>
                 </div>
                 <div className="single-team">
                     <h1 className='gocom-omnichannel'>Social Commerce</h1>
@@ -71,7 +71,7 @@ const OmniChannel = () => {
                         alt="lazada-award" 
                                     />
                         <h2 className='gocom-omnichannel-title'>Performance Marketing</h2>
-                        <p className='gocom-omnichannel-desc'>We mount marketing campaigns that use the latest Socail Media and In-platform tools to build meaningful traffic, engagement, and sales for your brand.</p>
+                        <p className='gocom-omnichannel-desc'>We create marketing campaigns that don't just drive traffic but also attract meaningful engagement for your brand. You get access to the latest social media advertising tools that help you connect with your target market and elevate your business to greater heights.</p>
                 </div>
                 <div className="single-team">
                     <h1 className='gocom-omnichannel'>ShipGo</h1>
@@ -81,7 +81,7 @@ const OmniChannel = () => {
                         alt="lazada-award" 
                     />
                     <h2 className='gocom-omnichannel-title'>eCommerce Fulfillment</h2>
-                    <p className='gocom-omnichannel-desc'>We safely store your inventory; then we rapidly pick, pack and dispatch every order to ensure customer delight.</p>
+                    <p className='gocom-omnichannel-desc'>We follow a simple but efficient process of ensuring orders are picked, packed, and dispatched quickly. Our ShipGo service is complete with a safe and secure inventory and is designed to meet your needs to save money, time, and other resources without sacrificing quality.</p>
                 </div>
                 <div className="single-team">
                     <h1 className='gocom-omnichannel'>Business Intelligence</h1>
@@ -91,7 +91,7 @@ const OmniChannel = () => {
                         alt="lazada-award" 
                     />
                     <h2 className='gocom-omnichannel-title'>Data Analytics</h2>
-                    <p className='gocom-omnichannel-desc'>We give you timely reports that show and highlight our data driven approach.</p>
+                    <p className='gocom-omnichannel-desc'>We take a data-driven approach to everything we do. We provide reports that are detailed and insightful as to how your business is doing, the areas that need attention, and how to improve the services you provide.</p>
                             
                 </div>
             

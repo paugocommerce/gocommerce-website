@@ -24,6 +24,166 @@ $value_seven: 1550px;
     }
     .section-title {
         margin-bottom: 40px;
+        .container{
+            font-size: 10px;
+            width: 100%;
+            height: 40em;
+            position: relative;
+            .eCommerceStrategy {
+                position: absolute;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                top: 5em;
+                width: 30em;
+                height: 30em; 
+                animation: 
+                orbit4 36.5s
+                    linear infinite;  
+                .eCommerceStrategyImg {
+                    position: absolute;
+                    bottom: -32px;
+                    right: 8px;
+                    transform: rotateZ(360deg);
+                    width: 247px;
+                    animation: zoom-in-zoom-out4 2s ease-out infinite;
+                }
+            }
+            .orderFulfillment {
+                position: absolute;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                top: 5em;
+                width: 30em;
+                height: 30em; 
+                animation: 
+                orbit3 36.5s
+                    linear infinite;  
+                .orderFulfillmentImg {
+                    position: absolute;
+                    top: -32px;
+                    left: 10px;
+                    transform: rotateZ(0deg);
+                    width: 245px;
+                    animation: zoom-in-zoom-out3 2s ease-out infinite;
+                }
+            }
+            .customerSupport {
+                position: absolute;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                top: 5em;
+                width: 30em;
+                height: 30em; 
+                animation: 
+                orbit2 36.5s
+                    linear infinite;  
+                .customerSupportImg {
+                    position: absolute;
+                    top: 10px;
+                    right: -30px;
+                    transform: rotateZ(360deg);
+                    height: 245px;
+                    animation: zoom-in-zoom-out2 2s ease-out infinite;
+                    
+                }
+            }
+        
+        .ecomMarketing {
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            top: 5em;
+            width: 30em;
+            height: 30em; 
+            animation: 
+            orbit 36.5s
+                linear infinite;  
+            .ecomMarketingImg {
+                position: absolute;
+                bottom: 10px;
+                left: -30px;
+                transform: rotateZ(0deg);
+                height: 245px;
+                animation: zoom-in-zoom-out 2s ease-out infinite;
+                
+            }
+        
+          }
+          @keyframes orbit {
+            to {
+                transform: 
+                rotate(360deg);
+            }
+            
+         }
+       
+         @keyframes orbit2 {
+            to {
+                transform: 
+                rotate(360deg);
+            }
+         }
+         
+         @keyframes orbit3 {
+            to {
+                transform: 
+                rotate(360deg);
+            }
+         }
+         
+         @keyframes orbit4 {
+            to {
+                transform: 
+                rotate(360deg);
+            }
+         }
+        //  @keyframes zoom-in-zoom-out4 {
+        //     0% {
+        //       transform: scale(1, 1);
+        //     }
+        //     50% {
+        //       transform: scale(0.9, 0.9);
+        //     }
+        //     100% {
+        //       transform: scale(1, 1);
+        //     }
+        //   }
+        //   @keyframes zoom-in-zoom-out3 {
+        //     0% {
+        //       transform: scale(1, 1);
+        //     }
+        //     50% {
+        //       transform: scale(0.9, 0.9);
+        //     }
+        //     100% {
+        //       transform: scale(1, 1);
+        //     }
+        //   }
+        //   @keyframes zoom-in-zoom-out2 {
+        //     0% {
+        //       transform: scale(1, 1);
+        //     }
+        //     50% {
+        //       transform: scale(0.9, 0.9);
+        //     }
+        //     100% {
+        //       transform: scale(1, 1);
+        //     }
+        //   }
+        //   @keyframes zoom-in-zoom-out {
+        //     0% {
+        //       transform: scale(1, 1);
+        //     }
+        //     50% {
+        //       transform: scale(0.9, 0.9);
+        //     }
+        //     100% {
+        //       transform: scale(1, 1);
+        //     }
+        //   }
+    
+        }
+          
         .ship-go-white-title {
             font-weight: 700;
             font-size: 30px;

@@ -1,16 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-const mobile = require('is-mobile');
-const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopBlank'), { ssr: false })
-const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/Footer'): import('@/components/_App/DesktopBlank'), { ssr: false })
 
 
-const WhyGocommerce = () => {
+const ShipGoContent = () => {
     return (
         <>
-            <MobileContentNavbar />
-            <div className="why-gocommerce-main-banner">
+         <div className="why-gocommerce-main-banner">
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="container">
@@ -40,7 +35,7 @@ const WhyGocommerce = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-3 col-sm-6 col-md-6 remove-padding">
                             <h3 className='ship-go-image-title'>Picked. Packed. Shipped.</h3>
-                            <p className='ship-go-image-desc'>We have the best technology that integrates with the top eCommerce platforms.</p>
+                            <p className='ship-go-image-desc'>Our ShipGo service is a testament to our growth as a global e-commerce company. We offer customized warehouse management service and supply chain solutions that meet your need of high-quality, timely, and efficient delivery to your customers.</p>
                             <div className="ship-go-single-ml-projects-box">
                                 <img src="/images/ship-go-image.png" alt="image" />
                             </div>
@@ -186,7 +181,7 @@ const WhyGocommerce = () => {
                 <div className="container-fluid">
                 <div className="section-title">
                     <h2 className='ship-go-white-title'>Our Logistics Partner</h2>
-                    <p className='ship-go-white-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                   
 
                 </div>
                 <div className="row justify-content-center logo-container">
@@ -204,11 +199,30 @@ const WhyGocommerce = () => {
                     </div>
                     
                 </div>
+
+                <div className="row justify-content-center logo-container">
+                    <div className="col-lg-2 col-md-3 col-6 brand-logo justify-content-center">
+                        <img src="/images/shipgo-1.png" alt="partner" />
+                        <h3 className='shipgo-process-text'>Connect your stores &amp;<br/>send us your products</h3>
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-6 brand-logo">
+                        <img src="/images/shipgo-2.png" alt="partner" />
+                        <h3 className='shipgo-process-text-2'>We safely store &amp;<br/>your inventory</h3>
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-6 brand-logo">
+                        <img src="/images/shipgo-3.png" alt="partner" />
+                        <h3 className='shipgo-process-text'>Your customer makes &amp;<br/>an order on your store</h3>
+                    </div>
+                    <div className="col-lg-2 col-md-3 col-6  brand-logo">
+                        <img src="/images/shipgo-4.png" alt="partner" />
+                        <h3 className='shipgo-process-text-2'>We quickly pick, &amp;<br/> pack and ship</h3>
+                    </div>
+                    
                 </div>
-            </div>          
-            <MobileContentFooter />
-        </>
+                </div>
+            </div>
+             </>
     )
 }
 
-export default WhyGocommerce;
+export default ShipGoContent;

@@ -1,5 +1,199 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .ship-go-card .ship-go-icon-text-2 .ship-go-text-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+  .ship-go-card .ship-go-icon-text-2 .ship-go-text-desc .ship-go-text-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .ship-go-card .ship-go-icon-text-2 {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 29px;
+  }
+  .ship-go-card .ship-go-second-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+  .ship-go-card .ship-go-icon-text .ship-go-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+  }
+  .ship-go-card .ship-go-image-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+  }
+  .ship-go-card .ship-go-image-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
+  .contact-page {
+    background-color: #0D1A26;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+}
+  .gocommercex-main-banner .hero-content .ship-go-image {
+    height: 25px;
+  }
+  .gocommercex-main-banner .hero-content .ship-go-image {
+    margin-top: -20px;
+    max-width: 90% !important;
+    margin-right: 6px;
+  
+}
+  #header.headroom {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: 0.3s;
+    padding-top: 15px;
+
+  }
+  #header.headroom.is-sticky {
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    background-color: #ffffff !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 70px;
+   
+}
+  .services-page {
+    margin-top: 50px;
+    background-color: #0D1A26;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-area .about-content {
+    margin-top: 0px;
+  }
+  .footer-area .footer-h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+  .footer-area .footer-h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .section-title .services-page-main-gocom-x span {
+    background-color: #0ACF83;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .section-title .services-page-main-gocom-x {
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .services-page-gocom-x {
+    margin-top: -2px;
+    background-color: #0D1A26;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services-page-gocom-x .container .services-card .services-image-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+  }
+  .services-page-gocom-x .container .services-card .services-image-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .services-page-gocom-x .container .services-card .remove-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .gocommercex-main-banner {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    background: transparent url(/images/gocom-banner.png) right bottom no-repeat;
+    
+  }
+  .gocommercex-main-banner {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+  .gocommercex-main-banner .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 80px;
+  }
+  .gocommercex-main-banner .hero-content .ship-go-desc {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+  .gocommercex-main-banner .hero-content .ship-go-image {
+    margin-top: -11px;
+    max-width: 50% !important;
+    margin-right: 6px;
+  }
+  .gocommercex-main-banner .hero-content .ship-go {
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 43px;
+    color: #FFFFFF;
+  }
+  .gocommercex-main-banner .hero-content .ship-go-get-started {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 50px;
+    gap: 10px;
+    color: #0ACF83;
+    width: 220px;
+    height: 44px;
+    border: 1px solid rgba(10, 207, 131, 0.8);
+    margin-top: 50px;
+  }
+  .gocommercex-main-banner .hero-content .ship-go-get-started:hover {
+    background-color: #0ACF83;
+    border: 1px solid #0ACF83;
+    color: #fff;
+  }
   .btn {
     font-size: 13px;
     padding: 13px 33px;
@@ -11,6 +205,128 @@
   .section-title {
     margin-bottom: 40px;
   }
+  .section-title .container {
+    font-size: 10px;
+    width: 100%;
+    height: 40em;
+    position: relative;
+  }
+  .section-title .container .eCommerceStrategy {
+    position: absolute;
+    /* border-radius: 50%;
+    border: 2px solid #fff; */
+    top: 5em;
+    width: 30em;
+    height: 30em;
+    -webkit-animation: orbit4 36.5s linear infinite;
+            animation: orbit4 36.5s linear infinite;
+  }
+  .section-title .container .eCommerceStrategy .eCommerceStrategyImg {
+    position: absolute;
+    bottom: -32px;
+    right: 8px;
+    transform: rotateZ(360deg);
+    width: 247px;
+    -webkit-animation: zoom-in-zoom-out4 2s ease-out infinite;
+            animation: zoom-in-zoom-out4 2s ease-out infinite;
+  }
+  .section-title .container .orderFulfillment {
+    position: absolute;
+    /* border-radius: 50%;
+    border: 2px solid #fff; */
+    top: 5em;
+    width: 30em;
+    height: 30em;
+    -webkit-animation: orbit3 36.5s linear infinite;
+            animation: orbit3 36.5s linear infinite;
+  }
+  .section-title .container .orderFulfillment .orderFulfillmentImg {
+    position: absolute;
+    top: -32px;
+    left: 10px;
+    transform: rotateZ(0deg);
+    width: 245px;
+    -webkit-animation: zoom-in-zoom-out3 2s ease-out infinite;
+            animation: zoom-in-zoom-out3 2s ease-out infinite;
+  }
+  .section-title .container .customerSupport {
+    position: absolute;
+    /* border-radius: 50%;
+    border: 2px solid #fff; */
+    top: 5em;
+    width: 30em;
+    height: 30em;
+    -webkit-animation: orbit2 36.5s linear infinite;
+            animation: orbit2 36.5s linear infinite;
+  }
+  .section-title .container .customerSupport .customerSupportImg {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    transform: rotateZ(360deg);
+    height: 245px;
+    -webkit-animation: zoom-in-zoom-out2 2s ease-out infinite;
+            animation: zoom-in-zoom-out2 2s ease-out infinite;
+  }
+  .section-title .container .ecomMarketing {
+    position: absolute;
+    /* border-radius: 50%;
+    border: 2px solid #fff; */
+    top: 5em;
+    width: 30em;
+    height: 30em;
+    -webkit-animation: orbit 36.5s linear infinite;
+            animation: orbit 36.5s linear infinite;
+  }
+  .section-title .container .ecomMarketing .ecomMarketingImg {
+    position: absolute;
+    bottom: 10px;
+    left: -30px;
+    transform: rotateZ(0deg);
+    height: 245px;
+    -webkit-animation: zoom-in-zoom-out 2s ease-out infinite;
+            animation: zoom-in-zoom-out 2s ease-out infinite;
+  }
+  /* @-webkit-keyframes orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes orbit2 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orbit2 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes orbit3 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orbit3 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes orbit4 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes orbit4 {
+    to {
+      transform: rotate(360deg);
+    }
+  } */
   .section-title .ship-go-white-title {
     font-weight: 700;
     font-size: 30px;
@@ -94,6 +410,8 @@
     background-color: #0ACF83;
     color: #fff;
     padding: 5px 10px;
+    font-size: 25px;
+    font-weight: 700;
   }
   .section-title .services-page-title {
     font-size: 24px;
@@ -105,11 +423,26 @@
   }
   .section-title .services-page-desc {
     font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
     font-weight: 400;
     text-align: left;
     color: #fff;
+  }
+  .services-page .container .services-card .services-image-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+  }
+  .services-page .container .services-card .services-image-title > a {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 15px;
   }
   .section-title h2 {
     font-size: 16px;
@@ -124,6 +457,7 @@
     margin-top: 10px;
     color: #fff;
     font-size: 25px;
+    font-weight: 600;
   }
   .section-title .our-mission-below span {
     color: #0ACF83;
@@ -132,7 +466,12 @@
     padding: 15px 25px;
     color: #fff;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+  }
+  .hero-content .mobile-banner-desc {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
   }
   .section-title .velocity-image {
     margin-top: 20px;
@@ -160,12 +499,17 @@
   .section-title .gocom-recognition span {
     background-color: #0ACF83;
     color: #fff;
+    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
   }
   .section-title .gocom-recognition-desc {
     margin-bottom: 30px;
     color: #fff;
     text-align: left;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 16px;
     padding-left: 15px;
   }
   .section-title .gocom-framework {
@@ -202,13 +546,21 @@
   }
   .section-title .story-title {
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 30px;
   }
+  
   .section-title .about-us-desc {
     color: #fff;
     font-size: 16px;
+    margin-bottom: 20px !important;
+  }
+  .section-title .about-us-desc-management {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 40px !important;
+    text-align: center;
   }
   .section-title .gocom-values {
     color: #fff;
@@ -264,7 +616,7 @@
     font-size: 18px;
     line-height: 120%;
     color: #FFFFFF;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .why-gocommerce-main-banner .hero-content .ship-go-image {
     margin-top: -18px;
@@ -294,6 +646,24 @@
     background-color: #0ACF83;
     border: 1px solid #0ACF83;
     color: #fff;
+  }
+  h3.shipgo-process-text {
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: left;
+    color: #0D1A26;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  h3.shipgo-process-text-2 {
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: left;
+    color: #0D1A26;
+    padding-left: 20px;
+    margin-top: 10px;
   }
   .main-banner {
     height: 100%;
@@ -326,13 +696,15 @@
     color: #FFFFFF;
   }
   .main-banner .mainbanner-slideshow .hero-content h1 {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 30px;
     margin-bottom: 15px;
     font-weight: 600;
   }
   .main-banner .mainbanner-slideshow .hero-content h1 span {
     background-color: #0ACF83;
+    font-size: 24px;
+    font-weight: 600;
   }
   .main-banner .mainbanner-slideshow .hero-content .omnichannel {
     margin-top: -5px;
@@ -354,9 +726,9 @@
     padding-left: 5px;
   }
   .main-banner .mainbanner-slideshow .hero-content .get-started {
-    background-color: #0ACF83;
+    background-color: transparent;
     border: 1px solid #0ACF83;
-    color: #fff;
+    color: #0ACF83;
     width: 220px;
     letter-spacing: 2px;
   }
@@ -514,8 +886,8 @@
     margin-right: 15px;
     margin-bottom: 30px;
   }
-  .services-content .end-to-end {
-    font-weight: 700;
+  .sec-end-to-end .end-to-end {
+    font-weight: 600;
     margin-top: 10px;
     color: #fff;
     font-size: 25px;
@@ -523,30 +895,30 @@
     padding-right: 15px;
     margin-bottom: 30px;
   }
-  .services-content .faq-accordion {
+  .sec-end-to-end .faq-accordion {
     background: #0D1A26 !important;
   }
-  .services-content .faq-accordion .accordion {
+  .sec-end-to-end .faq-accordion .accordion {
     padding: 0px 12px;
   }
-  .services-content .faq-accordion .accordion .accordion__panel {
+  .sec-end-to-end .faq-accordion .accordion .accordion__panel {
     padding: 15px 0px;
     border-top: none;
     background-color: #0D1A26;
     border-bottom: 1px solid #fff;
   }
-  .services-content .faq-accordion .accordion .accordion__panel p {
+  .sec-end-to-end .faq-accordion .accordion .accordion__panel p {
     color: #fff;
     line-height: 1.8;
     font-weight: 400;
   }
-  .services-content .faq-accordion .accordion .accordion__item {
+  .sec-end-to-end .faq-accordion .accordion .accordion__item {
     box-shadow: none;
     background: #0D1A26;
     margin-bottom: 15px;
     border: none;
   }
-  .services-content .faq-accordion .accordion .accordion__button {
+  .sec-end-to-end .faq-accordion .accordion .accordion__button {
     display: block;
     padding: 5px 20px;
     text-decoration: none;
@@ -556,7 +928,7 @@
     font-size: 15px;
     font-weight: 500;
   }
-  .services-content .faq-accordion .accordion__button:before {
+  .sec-end-to-end .faq-accordion .accordion__button:before {
     background: url("../images/text-left-line.png") center no-repeat !important;
     background-size: contain !important;
     border-bottom: none !important;
@@ -572,19 +944,19 @@
     width: 20px;
     height: 25px;
   }
-  .services-content .faq-accordion .accordion__button[aria-expanded=true]::before {
+  .sec-end-to-end .faq-accordion .accordion__button[aria-expanded=true]::before {
     transform: rotate(90deg) !important;
     padding-right: 30px;
     top: 10%;
   }
-  .services-content .faq-accordion .accordion__button[aria-expanded=true] span {
+  .sec-end-to-end .faq-accordion .accordion__button[aria-expanded=true] span {
     margin-left: 15px;
   }
-  .services-content .end-to-end-list {
+  .sec-end-to-end .end-to-end-list {
     padding-left: 30px;
     padding-right: 15px;
   }
-  .services-content .end-to-end-list .verticalLine:before {
+  .sec-end-to-end .end-to-end-list .verticalLine:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -597,7 +969,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .services-content .end-to-end-list .verticalLine {
+  .sec-end-to-end .end-to-end-list .verticalLine {
     padding-right: 15px;
     position: relative;
     color: #fff;
@@ -2059,7 +2431,7 @@
     padding-left: 15px;
   }
   .startp-nav nav .navbar-brand2 {
-    padding-left: 15px;
+    padding-left: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -2069,11 +2441,12 @@
   .startp-nav nav .navbar-collapse {
     min-height: 100vh;
     overflow-y: hidden;
-    background: rgba(2, 107, 141, 0.8);
+    background: rgba(2, 107, 141, 1);
     position: -webkit-sticky;
     position: sticky;
     margin-top: -60px;
     width: 100% !important;
+    padding-top: 15px;
   }
   .startp-nav nav .navbar-collapse::-webkit-scrollbar {
     width: 8px;
@@ -3075,6 +3448,136 @@
 /* Min width 1200px */
 @media only screen and (min-width: 1350px) {
   .container {
-    max-width: 1250px;
+    max-width: 1350px;
   }
 }/*# sourceMappingURL=responsive.css.map */
+
+@media (min-width: 768px){
+  .main-banner .mainbanner-slideshow .hero-content {
+    position: absolute;
+    margin-bottom: 45px;
+    text-align: center;
+    top: 25%;
+    left: 5.5%;
+    z-index: 9999;
+    width: 60%;
+  }
+  .main-banner .hero-content h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+
+  }
+  .main-banner .hero-content .omnichannel {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 3px 0px;
+  }
+  .main-banner .hero-content p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .main-banner .hero-content .get-started {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 220px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  
+  }
+  .section-title .our-mission-below {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .section-title .our-mission-below span {
+    color: #0ACF83;
+  }
+  .section-title .our-mission-desc {
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .section-title p {
+      max-width: 1350px;
+      margin: 0 auto;
+  }
+  .services-content .grow-with-us {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #0ACF83;
+    color: #0ACF83;
+    width: 220px;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+    opacity: 1;
+  }
+  .services-content hr {
+    margin-top: 40px;
+    border-top: 2px solid #57E49E;
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .section-title .velocity-image {
+    height:500px;
+    margin-top: 35px;
+  }
+  .velocity-label-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .velocity-label-desc {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  .velocity-mt {
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
+  }
+  .velocity-ml {
+    margin-left: -100px;
+  }
+  .velocity-label-container {
+    width: 300px;
+    
+  }
+  .velocity-label-container-bottom {
+    width: 300px;
+    margin-top: -30px;
+    padding-bottom: 50px;
+    
+  }
+  .services-content .end-to-end {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+  
+
+}

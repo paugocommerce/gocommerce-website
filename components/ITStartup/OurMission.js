@@ -14,7 +14,7 @@ const OurMission = () => {
                             <h2 className='gocom-values text-center'>GoCommerce Values</h2>
                             <h1 className='gocom-values-below text-center'><span>A</span>IMBIG</h1>
                             <h1 className='gocom-values-accountabilities text-center'>Accountability</h1>
-							<p className='gocom-values-desc text-center'>We drive results. We say what we<br/> mean and we mean what we say.</p>										
+							<p className='gocom-values-desc text-center'>We say what we mean and we mean what we say. We hold ourselves accountable for every decision we make. Our top priority is always to drive results and improve every aspect of the services we provide.</p>										
                         </div>
 						<div class="text-center">
 						<Link href="/contact">

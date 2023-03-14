@@ -43,36 +43,14 @@ const MainBanner = () => {
     return (
         isMobile ?
 		<div className="main-banner">
-            {display4 ? <OwlCarousel4 
-                className="agency-portfolio-home-slides owl-carousel owl-theme"
-                {...options4}
-            > 
-                 <img 
-                                        src='/images/main-banner-bg.png' 
+        
+                                    <img 
+                                        src='/images/mobile-banner.png' 
                                         className="" 
                                         alt="man" 
                                     />
-                                    <img 
-                                        src='/images/banner-slideshow-1.png' 
-                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
-                                        alt="man" 
-                                    />
-                                    <img 
-                                        src='/images/banner-slideshow-2.png' 
-                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
-                                        alt="man" 
-                                    />
-                                    <img 
-                                        src='/images/banner-slideshow-3.png' 
-                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
-                                        alt="man" 
-                                    />
-                                    <img 
-                                        src='/images/banner-slideshow-4.png' 
-                                        className="animate__animated animate__fadeInDown animate__delay-0.1s" 
-                                        alt="man" 
-                                    />
-            </OwlCarousel4> : ''}
+                                  
+        
           
 			<div className="d-table">
 				<div className="d-table-cell">
@@ -85,7 +63,9 @@ const MainBanner = () => {
                                 
 									<h1><span>Fast-scaling</span></h1>
                                     <h1 className='omnichannel'><span>Omnichannel eCommerce</span></h1>
-									<p>GoCommerce is an eCommerce strategy and management company that helps brands accelerate the growth of their eCommerce business.</p>
+									<p className='mobile-banner-desc'>GoCommerce is an eCommerce strategy and management company that helps brands accelerate the growth of their eCommerce business.
+
+</p>
 									
 									<Link href="/contact">
 										<a className=" float-start get-started">GROW WITH US</a>

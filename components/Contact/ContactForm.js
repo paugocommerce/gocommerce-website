@@ -55,9 +55,9 @@ const ContactForm = () => {
         <div className="contact-form-area ptb-80">
             <div className="container">
                 <div className="section-title">
-                    <h2 className='contact-form-title'>How can we help you grow?</h2>
+                    <h2 className='contact-form-title'>Be part of our growing team!</h2>
                     
-                    <p className='contact-form-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                    <p className='contact-form-desc'>We are looking for people who have the passion for the business world and wants to be part of a great team. If you want to be part of an exciting environment with a lot of growth opportunities, there is no better place than GoCommerce. Be part of our family today!</p>
 
                     <h2 className='contact-form-label'>US HELP CENTER / SUBMIT A REQUEST </h2>
                 </div>

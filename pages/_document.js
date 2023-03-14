@@ -13,6 +13,7 @@ class MyDocument extends Document {
         return (
             <Html dir={dir} lang={locale}>
                 <Head>
+                
                     <link 
                         rel="icon" 
                         type="image/png" 
@@ -26,6 +27,8 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+                    {/*Below we add the modal wrapper*/}
+                    
                 </body>
             </Html>
         )

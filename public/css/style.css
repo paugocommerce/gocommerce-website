@@ -92,6 +92,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  
 }
 
 :root {
@@ -261,7 +262,7 @@ textarea.form-control {
   height: 100%;
   width: 0;
   transition: 0.5s;
-  background: #c679e3;
+  background: #2BD2A9;
   z-index: -1;
 }
 .btn::after {
@@ -344,6 +345,45 @@ label {
 .section-title {
   text-align: center;
   margin-bottom: 50px;
+}
+.section-title .ecomMarketing {
+  -webkit-animation: spin1 2s infinite linear;
+  animation: spin1 2s infinite linear;
+}
+@-webkit-keyframes spin1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    display: none;
+  }
+  50% {
+    transform: scaleX(0.5) rotate(0deg);
+  }
+  100% {
+    transform: scaleX(0.5) rotate(0deg);
+  }
+}
+@keyframes spin1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    display: none;
+  }
+  50% {
+    transform: scaleX(0.5) rotate(0deg);
+  }
+  100% {
+    transform: scaleX(0.5) rotate(0deg);
+  }
+}
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    display: none;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .section-title h2 {
   margin-bottom: 0;
@@ -484,13 +524,14 @@ Navbar CSS
   left: 0;
   background-color: transparent;
   transition: 0.3s;
-  padding-top: 15px;
+  padding-top: 45px;
 }
 #header.headroom.is-sticky {
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   background-color: #ffffff !important;
   padding-top: 15px;
   padding-bottom: 15px;
+  height: 80px;
 }
 #header.headroom.navbar-style-two {
   background-color: #ffffff;
@@ -755,6 +796,37 @@ Navbar CSS
     border-bottom: none;
   }
 }
+
+.top-nav {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: transparent;
+  width: 100%;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 2em 1em;
+}
+
+@media (min-width: 768px){
+  .navbar-expand-md {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      
+  }
+  .navbar-toggler .icon-bar {
+    background: #fff;
+  }
+}
+
+
+@media (max-width: 700px) {
+ 
+}
 /*================================================
 Why Gocommerce Main Banner CSS
 =================================================*/
@@ -781,15 +853,15 @@ Why Gocommerce Main Banner CSS
   padding-bottom: 50px;
 }
 .ship-go-card .ship-go-image-title {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 130%;
   color: #FFFFFF;
 }
 .ship-go-card .ship-go-image-desc {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 130%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
   color: #FFFFFF;
 }
 .ship-go-card .ship-go-hr {
@@ -818,14 +890,15 @@ Why Gocommerce Main Banner CSS
   border-radius: 0px;
 }
 .ship-go-card .ship-go-icon-text .ship-go-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  margin-top:20px;
 }
 .ship-go-card .ship-go-icon-text-2 {
-  display: inline-flex;
+  text-align: center;
   align-items: center;
   margin-top: 29px;
 }
@@ -856,16 +929,18 @@ Why Gocommerce Main Banner CSS
 .ship-go-card .ship-go-icon-text-2 .ship-go-text-desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  margin-top: 20px;
 }
 .ship-go-card .ship-go-icon-text-2 .ship-go-text-desc .ship-go-text-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 120%;
   text-transform: uppercase;
   color: #FFFFFF;
+  
 }
 .ship-go-card .ship-go-arrow-down {
   display: flex;
@@ -873,6 +948,7 @@ Why Gocommerce Main Banner CSS
   align-items: center;
   margin-top: 15px;
   margin-bottom: 5px;
+  width: 150px;
 }
 
 /*================================================
@@ -882,7 +958,7 @@ Main Banner CSS
   position: relative;
   height: 910px;
   z-index: 1;
-  background: transparent url(/images/main-banner-bg.png) right top no-repeat;
+  background: transparent url(/images/desktop-banner-slideshow-1.png) right top no-repeat;
 }
 .main-banner .hero-content {
   position: relative;
@@ -916,7 +992,7 @@ Main Banner CSS
   margin-bottom: 30px;
 }
 .main-banner .hero-content .get-started {
-  background-color: #0ACF83;
+  background-color: transparent;
   border: 1px solid #0ACF83;
   color: #fff;
   width: 220px;
@@ -1605,7 +1681,7 @@ Contact Page CSS
   background-color: #0D1A26;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 50px;
+  padding-top: 150px;
 }
 
 .contact-form-area {
@@ -1645,11 +1721,12 @@ Contact Page CSS
   flex-grow: 0;
 }
 
+
 /*================================================
 Services CSS
 =================================================*/
 .services-page {
-  margin-top: 50px;
+  padding-top: 150px;
   background-color: #0D1A26;
   padding-left: 15px;
   padding-right: 15px;
@@ -1669,7 +1746,7 @@ Services CSS
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  line-height: 19.5px;
+  line-height: 1.5;
 }
 .services-page .container .services-card .remove-padding {
   padding-left: 0px !important;
@@ -2182,17 +2259,17 @@ Features CSS
   left: 0;
 }
 .features-area .container .owl-theme .owl-nav [class*=owl-] {
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 10px;
-  height: 35px;
-  width: 34px;
+  height: 30px;
+  width: 29px;
   background-color: #0ACF83;
   margin-top: -20px;
 }
 .features-area .container .owl-nav .owl-next {
-  padding-right: 30px !important;
+  padding-right: 20px !important;
 }
 .features-area .container .owl-nav .owl-prev {
   padding-left: 10px !important;
@@ -2219,7 +2296,7 @@ Features CSS
   display: inline-block;
   border: solid #fff;
   border-width: 0 3px 3px 0;
-  padding: 6px;
+  padding: 5px;
   transform: rotate(-45deg);
 }
 
@@ -2460,7 +2537,7 @@ Team CSS
   padding-bottom: 0px;
   margin-bottom: 30px;
   transition: 0.5s;
-  z-index: 1;
+  position: relative;
   text-align: center;
   border-radius: 15px;
 }
@@ -2653,7 +2730,7 @@ Fun Facts CSS
   margin-top: 10px;
 }
 .funfacts-area .section-title h2 {
-  max-width: 570px;
+ 
   margin: 0 auto;
   line-height: 37px;
 }
@@ -7715,8 +7792,9 @@ ML About CSS
   padding: 5px 15px;
 }
 .about-area .about-us-image {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 30px;
 }
 
 .omnichannel-area {
@@ -8242,7 +8320,7 @@ ML Projects CSS
   position: relative;
   border-radius: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175);
+  
   background-color: #0D1A26;
   padding-top: 50px;
 }
@@ -9103,7 +9181,7 @@ Creative Area CSS
 Footer CSS
 =================================================*/
 .footer-area {
-  padding-top: 80px;
+  padding-top: 0px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -9163,7 +9241,7 @@ Footer CSS
   text-align: center;
   justify-content: center;
   opacity: 1;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .footer-area .grow-with-us:hover, .footer-area .grow-with-us:focus, .footer-area .grow-with-us:active {
   padding: 8px 15px;
@@ -9175,7 +9253,7 @@ Footer CSS
   text-align: center;
   justify-content: center;
   opacity: 1;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .footer-area .map {
   position: absolute;
@@ -9191,6 +9269,7 @@ Footer CSS
 
 .single-footer-widget {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 .single-footer-widget .logo {
   margin-bottom: 20px;
@@ -9401,3 +9480,486 @@ Go Top CSS
 .lang-didebar a:last-child {
   background-color: #483e3e;
 }/*# sourceMappingURL=style.css.map */
+
+.section-title .gocom-brands {
+  margin-top: 10px;
+  color: #0D1A26;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: none;
+}
+.section-title .gocom-brands .highlight {
+  background: linear-gradient(120deg, #57E49E 0%, #57E49E 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: 0 90%;
+}
+.section-title .gocom-recognition span {
+  background-color: #0ACF83;
+  color: #fff;
+ 
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 35px;
+}
+.section-title .gocom-recognition {
+  font-size: 35px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+.section-title .gocom-recognition-desc {
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+.section-title .gocom-framework {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0D1A26;
+  line-height: 45px !important;
+}
+.section-title .gocom-framework .highlight {
+  background: linear-gradient(120deg, #57E49E 0%, #57E49E 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-position: 0 90%;
+}
+.section-title .gocom-framework-desc {
+  margin-top: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  color: #0D1A26;
+}
+.footer-area .footer-h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.footer-area .footer-h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.main-banner .hero-content .get-started {
+  margin-left: 2px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 13px 15px;
+  letter-spacing: 1px;
+}
+.navbar-light .navbar-nav .nav-link.gocom-color-link {
+  color: #0ACF83;
+}
+.navbar-light .navbar-nav .nav-link.gocom-color-link:hover {
+  color: #0ACF83;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  
+}
+.navbar-nav {
+  margin-top: 10px;
+}
+.section-title .about-us-desc-management {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px !important;
+  text-align: center;
+  font-weight: 400;
+}
+.about-area .about-content {
+  margin-top: 20px;
+}
+.section-title .about-us-title {
+  font-size: 35px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  text-align: left;
+}
+.section-title .about-us-title span {
+  padding: 5px 10px;
+  background-color: #0ACF83;
+  color: #fff;
+}
+.section-title .story-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.section-title .about-us-desc {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px !important;
+}
+.single-team .gocom-omnichannel {
+  text-align: left;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+.omnichannel-1 {
+  padding-top: 150px;
+}
+.omnichannel-line {
+  position: absolute;
+  margin-top: 190px;
+  padding-left: 130px;
+  padding-right: 130px;
+  z-index: 2;
+}
+.omnichannel-image {
+  z-index: 5 !important;
+  position: relative;
+}
+.single-team .gocom-omnichannel-title {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.single-team .gocom-omnichannel-desc {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.aimbig {
+  margin-top: 0px;
+}
+.section-title .gocom-values {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+.section-title .gocom-values-below {
+  font-size: 200px;
+  color: #BFBFBF;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+.section-title .gocom-values-below span:hover {
+  background: -webkit-linear-gradient(#57E49E, #00AAB9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-title .gocom-values-accountabilities {
+  background: -webkit-linear-gradient(#57E49E, #00AAB9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: -8px;
+}
+.section-title .gocom-values-desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.services-content .join-with-us {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #0ACF83;
+  color: #0ACF83;
+  width: 220px;
+  letter-spacing: 2px;
+  text-align: center;
+  justify-content: center;
+  opacity: 1;
+  margin-top: 15px;
+}
+.section-title .services-page-main {
+  font-size: 35px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 20px;
+}
+.section-title .services-page-main span {
+  background-color: #0ACF83;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section-title .services-page-title {
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+}
+.section-title .services-page-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+}
+.services-page .container .services-card .services-image-title > a {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.gocommercex-main-banner {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  background: transparent url(/images/desktop-gocomm-banner.png) right bottom no-repeat;
+}
+.gocommercex-main-banner {
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+.section-title .services-page-main-gocom-x span {
+  background-color: #0ACF83;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.section-title .services-page-main-gocom-x {
+  font-size: 35px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 20px;
+}
+.services-page-gocom-x {
+  margin-top: -2px;
+  background-color: #0D1A26;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gocommercex-main-banner .hero-content {
+ 
+  padding-right: 15px;
+  margin-top: 80px;
+}
+.gocommercex-main-banner .hero-content .ship-go-image {
+  margin-top: -38px;
+  max-width: 90% !important;
+  margin-right: 6px;
+  height: 55px;
+}
+.gocommercex-main-banner .hero-content .ship-go {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+.gocommercex-main-banner .hero-content .ship-go-desc {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.gocommercex-main-banner .hero-content .ship-go-get-started {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 50px;
+  grid-gap: 10px;
+  gap: 10px;
+  color: #0ACF83;
+  width: 220px;
+  height: 44px;
+  border: 1px solid rgba(10, 207, 131, 0.8);
+  margin-top: 50px;
+}
+.services-page-gocom-x .container .services-card .services-image-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.services-page-gocom-x .container .services-card .services-image-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+}
+.section-title .contact-page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  padding-top: 70px;
+  padding-left: 15px;
+}
+.section-title .contact-page-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+.section-title .contact-form-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  color: #0D1A26;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section-title .contact-form-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5C6670;
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 10px;
+  padding-right: 15px;
+}
+.section-title .contact-form-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5C6670;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 30px;
+}
+.contact-form-area .contact-form-field .btn-contact-form:hover {
+  background: #2BD2A9;
+}
+.why-gocommerce-main-banner {
+  padding-top: 250px;
+    padding-bottom: 250px;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  background: transparent url(/images/desktop-shipgo-banner.png) no-repeat;
+}
+.why-gocommerce-main-banner .hero-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 80px;
+}
+.why-gocommerce-main-banner .hero-content .ship-go-desc {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.why-gocommerce-main-banner .hero-content .ship-go {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+.why-gocommerce-main-banner .hero-content .ship-go-logo-banner-image {
+  height: 55px;
+  margin-top: -38px;
+}
+.why-gocommerce-main-banner .hero-content .ship-go-image {
+  
+  max-width: 60% !important;
+  margin-right: 6px;
+}
+.why-gocommerce-main-banner .hero-content .ship-go-desc {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.why-gocommerce-main-banner .hero-content .ship-go-get-started {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 50px;
+  grid-gap: 10px;
+  gap: 10px;
+  color: #fff;
+  width: 220px;
+  height: 44px;
+  border: 1px solid rgba(10, 207, 131, 0.8);
+  margin-top: 50px;
+}
+.shipgo-process-details {
+  padding: 70px 70px;
+}
+.ship-go-card .ship-go-second-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+h3.shipgo-process-text {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #0D1A26;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+h3.shipgo-process-text-2 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: #0D1A26;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.section-title .ship-go-white-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 37px;
+  text-align: center;
+  color: #0D1A26;
+}
+.shipgo-inline-flex {
+  display: inline-flex;
+  align-items: center;
+}

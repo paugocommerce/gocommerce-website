@@ -88,12 +88,13 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/why-gocommerce">
+                                    <Link href="/gocommerce-advantage" >
                                         <a  className="nav-link">
-                                            Why GoCommerce 
+                                            GoCommerce Advantage
                                         </a>
                                     </Link>
                                 </li>
+                                
                                 <li className="nav-item">
                                     <Link href="/contact-us" >
                                         <a  className="nav-link">

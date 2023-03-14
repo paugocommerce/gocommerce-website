@@ -17,17 +17,24 @@ import Layout from '@/components/_App/Layout'
 import { Provider } from 'react-redux'
 import { ToastProvider } from 'react-toast-notifications'
 import { useStore } from '../store'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
     const store = useStore(pageProps.initialReduxState)
 
     return (
+        
         <ToastProvider 
             placement = "bottom-left"
             autoDismissTimeout={6000}
             autoDismiss
         >
             <Provider store={store}>
+            <Head>
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+
+            </Head>
                 <Layout />
                 <Component {...pageProps} />
             </Provider>
