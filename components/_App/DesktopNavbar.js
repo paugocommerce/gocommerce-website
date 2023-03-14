@@ -20,7 +20,7 @@ const DesktopNavbar = () => {
         document.addEventListener("scroll", () => {
             if (window.scrollY > 170) {
                 elementId.classList.add("is-sticky");
-                setImgSrc('/images/GoCommerce-Logo.png');
+                setImgSrc('/images/GoCommerce-Logo-scroll.png');
                 setlinkColor('gocom-color-link'); 
                
             } else {

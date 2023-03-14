@@ -9556,7 +9556,7 @@ Go Top CSS
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 13px 15px;
+  padding: 13px 15px 5px 15px;
   letter-spacing: 1px;
 }
 .navbar-light .navbar-nav .nav-link.gocom-color-link {
@@ -9564,10 +9564,40 @@ Go Top CSS
 }
 .navbar-light .navbar-nav .nav-link.gocom-color-link:hover {
   color: #0ACF83;
+  
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: #fff;
+ 
   
+}
+.navbar-light .navbar-nav .nav-link:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  margin-top: 3px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover:after {
+  width: 100%;
+  background:  #0ACF83;
+}
+.navbar-light .navbar-nav .nav-link.gocom-color-link:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  margin-top: 3px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.navbar-light .navbar-nav .nav-link.gocom-color-link:hover:after {
+  width: 100%;
+  background:  #fff;
 }
 .navbar-nav {
   margin-top: 10px;
