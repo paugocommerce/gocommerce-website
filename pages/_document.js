@@ -26,7 +26,11 @@ class MyDocument extends Document {
                 </Head>
                 <body>
                 <div id="globalLoader">
-  
+                <img 
+                        src='/images/pulse.gif'
+                       
+                        alt="lazada-award" 
+                                    />
                 </div>
                     <Main />
                     <NextScript />
