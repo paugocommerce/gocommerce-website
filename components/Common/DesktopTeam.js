@@ -46,7 +46,7 @@ const DesktopTeam = () => {
       };
         
   
-      const newText = text.split('\n');
+     
 
     return (
        <div className="team-area ptb-80 ">
