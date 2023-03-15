@@ -78,7 +78,7 @@ const DesktopFooter = () => {
                             <p>Privacy Policy</p>
                         </div>
                         <div className="col-3 footer-end-menu text-center">
-                            <p>Copyright 2022 GoCommerce</p>
+                            <p>Copyright {currentYear} GoCommerce</p>
                         </div>
                         </div>
                     </div>

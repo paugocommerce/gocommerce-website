@@ -78,7 +78,7 @@ const Footer = () => {
                             <p>Privacy Policy</p>
                         </div>
                         <div className="col-6 footer-end-menu">
-                            <p>Copyright 2022 GoCommerce</p>
+                            <p>Copyright {currentYear} GoCommerce</p>
                         </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const mobile = require('is-mobile');
@@ -8,6 +8,14 @@ const MobileContentCommercialContent = dynamic(() => mobile() ? import('@/compon
 
 
 const Commercial = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const loader = document.getElementById('globalLoader');
+          if (loader)
+            loader.remove();
+        }
+      }, []);
+      
     return (
         <>
             <MobileContentNavbar />

@@ -25,6 +25,9 @@ class MyDocument extends Document {
                     ></link>
                 </Head>
                 <body>
+                <div id="globalLoader">
+  
+                </div>
                     <Main />
                     <NextScript />
                     {/*Below we add the modal wrapper*/}

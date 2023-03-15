@@ -92,6 +92,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  background-color: #FCFCFC;
   
 }
 
@@ -5290,10 +5291,51 @@ Page Title CSS
 FAQ CSS
 =================================================*/
 .faq-accordion {
-  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
-  padding: 60px;
-  background: #ffffff;
-  border-radius: 10px;
+ 
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #0D1A26;
+
+}
+.faq-accordion .accordion-content {
+  color: #fff;
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 18px;
+  white-space: pre-wrap;
+
+}
+.faq-accordion .accordion-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+
+}
+.faq-accordion .accordion-btn-title.active {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 7px solid transparent;
+  border-image: linear-gradient(to right, #2BD2A9 100%, #00B0BD 100%);
+  border-image-slice: 1;
+  padding-left: 20px;
+  margin-bottom: 0px !important;
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-left: -1px;
+
+}
+.faq-accordion .accordion-btn-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(to right, #7E7E7E 100%, #7E7E7E 100%);
+  border-image-slice: 1;
+  padding-left: 20px;
+  margin-bottom: 0px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .faq-accordion .accordion {
   list-style-type: none;
@@ -9215,7 +9257,7 @@ Footer CSS
 }
 .footer-area .row .footer-end-menu p {
   color: #fff;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
 }
 .footer-area .footer-h2 {
@@ -9484,7 +9526,7 @@ Go Top CSS
 .section-title .gocom-brands {
   margin-top: 10px;
   color: #0D1A26;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   text-transform: none;
 }
@@ -9498,8 +9540,7 @@ Go Top CSS
   background-color: #0ACF83;
   color: #fff;
  
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 5px 10px;
   font-size: 35px;
 }
 .section-title .gocom-recognition {
@@ -9517,7 +9558,7 @@ Go Top CSS
   font-size: 18px;
 }
 .section-title .gocom-framework {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 700;
   color: #0D1A26;
   line-height: 45px !important;
@@ -9552,7 +9593,7 @@ Go Top CSS
   margin-left: 2px;
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: #fff !important;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -9560,10 +9601,10 @@ Go Top CSS
   letter-spacing: 1px;
 }
 .navbar-light .navbar-nav .nav-link.gocom-color-link {
-  color: #0ACF83;
+  color: #0ACF83 !important;
 }
 .navbar-light .navbar-nav .nav-link.gocom-color-link:hover {
-  color: #0ACF83;
+  color: #0ACF83 !important;
   
 }
 .navbar-light .navbar-nav .nav-link:hover {
@@ -9689,7 +9730,7 @@ Go Top CSS
   letter-spacing: 5px;
   font-weight: 800;
 }
-.section-title .gocom-values-below span:hover {
+.section-title .gocom-values-below span.active {
   background: -webkit-linear-gradient(#57E49E, #00AAB9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -9701,13 +9742,15 @@ Go Top CSS
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: -8px;
 }
 .section-title .gocom-values-desc {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .services-content .join-with-us {
   padding: 10px 15px;
@@ -9992,4 +10035,27 @@ h3.shipgo-process-text-2 {
 .shipgo-inline-flex {
   display: inline-flex;
   align-items: center;
+}
+
+#globalLoader {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  background-color: #0D1A26;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.sec-end-to-end .end-to-end {
+  font-weight: 600;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
 }

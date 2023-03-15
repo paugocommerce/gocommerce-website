@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
+import * as Icon from 'react-feather';
 import dynamic from 'next/dynamic';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
 const DesktopMainBanner = () => {
   
-
+    const [style, setStyle] = useState({display: 'none'});
 
 
     return (
@@ -30,7 +31,14 @@ const DesktopMainBanner = () => {
 </p>
 									
 									<Link href="/contact">
-										<a className=" float-start get-started">LEARN MORE</a>
+										<a className=" float-start get-started"  onMouseOver={e => {
+                            setStyle({display: 'inline-block'});
+                        }}
+                        onMouseLeave={e => {
+                            setStyle({display: 'none'})
+                        }}>LEARN MORE<Icon.ArrowRight size={17} style={style}
+                        
+						/></a>
 									</Link>
 								</div>
 							</div>

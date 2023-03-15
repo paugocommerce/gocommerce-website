@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import dynamic from 'next/dynamic';
 const mobile = require('is-mobile');
 const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopNavbar'), { ssr: false })
@@ -7,6 +7,14 @@ const MobileContentContactForm = dynamic(() => mobile() ? import('@/components/C
 const MobileContentContactBanner = dynamic(() => mobile() ? import('@/components/ITStartup/ContactUsBanner'): import('@/components/ITStartup/DesktopContactUsBanner'), { ssr: false })
 
 const Contact = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const loader = document.getElementById('globalLoader');
+          if (loader)
+            loader.remove();
+        }
+      }, []);
+      
     return (
         <>
             <MobileContentNavbar />

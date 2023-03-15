@@ -36,7 +36,7 @@ const DesktopNavbar = () => {
     const classTwo = menu ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
     return (
-        <header id="header" class="top-nav headroom">
+        <header id="header" className="top-nav headroom">
           
                 <div className="container  remove-padding">
                     <nav className="navbar navbar-expand-md navbar-light">

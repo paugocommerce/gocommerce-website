@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import dynamic from 'next/dynamic';
 
 
@@ -16,6 +16,13 @@ const MobileContentFooter = dynamic(() => mobile() ? import('@/components/_App/F
 
 
 const Home = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const loader = document.getElementById('globalLoader');
+          if (loader)
+            loader.remove();
+        }
+      }, []);
     
     return (
         <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 const mobile = require('is-mobile');
@@ -9,6 +9,14 @@ const MobileContentAdvantageBanner = dynamic(() => mobile() ? import('@/componen
 const MobileContentAdvantageContent = dynamic(() => mobile() ? import('@/components/ITStartup/AdvantageContent'): import('@/components/ITStartup/DesktopAdvantageContent'), { ssr: false })
 
 const WhyGocommerce = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const loader = document.getElementById('globalLoader');
+          if (loader)
+            loader.remove();
+        }
+      }, []);
+      
     return (
         <>
             <MobileContentNavbar />
