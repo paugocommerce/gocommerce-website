@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
             <meta property="og:description" content="GoCommerce" /> 
             <meta property="og:type" content="ecommerce" />
             <meta property="og:url" content="https://gocommerce.asia" />
-            <meta property="og:image" content="/images/og-gocommerce.png" />
+            <meta property="og:image" content="/images/og-gocommerce-svg.svg" />
 
             </Head>
                 <Layout />
