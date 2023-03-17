@@ -1,5 +1,10 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .footer-area .row .footer-end-menu p {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+}
   .contact-form-area .contact-form-field {
     padding-left: 0px; 
     padding-right: 0px;
