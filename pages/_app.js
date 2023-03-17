@@ -33,6 +33,11 @@ export default function App({ Component, pageProps }) {
             <Head>
             <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
             <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta property="og:title" content="GoCommerce" />
+            <meta property="og:description" content="GoCommerce" /> 
+            <meta property="og:type" content="ecommerce" />
+            <meta property="og:url" content="https://gocommerce.asia" />
+            <meta property="og:image" content="/images/og-gocommerce.png" />
 
             </Head>
                 <Layout />

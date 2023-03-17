@@ -10059,3 +10059,15 @@ h3.shipgo-process-text-2 {
   padding-right: 15px;
   margin-bottom: 30px;
 }
+.form-all {
+  border-radius: 0px !important;
+  box-shadow: 0 0px 0px rgba(87,100,126,.21) !important;
+  background-color: #FCFCFC !important;
+  max-width: 100% !important;
+}
+#input_4 {
+  width: 100% !important;
+}
+li.form-line:not(.form-line-column) .form-input-wide[data-layout=half] {
+  width: 100% !important;
+}

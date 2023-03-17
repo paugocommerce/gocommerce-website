@@ -1,5 +1,10 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .contact-form-area .contact-form-field {
+    padding-left: 0px; 
+    padding-right: 0px;
+    margin-top: -50px;
+}
   .ship-go-card .ship-go-arrow-down {
     display: flex;
     justify-content: center;

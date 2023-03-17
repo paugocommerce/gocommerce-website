@@ -6,6 +6,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 import baseUrl from '../../utils/baseUrl'
+import JotformEmbed from 'react-jotform-embed';
 
 const alertContent = () => {
     MySwal.fire({
@@ -66,128 +67,7 @@ const ContactForm = () => {
                    
 
                     <div className="col-lg-6 col-md-12">
-                        <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
-                            <div className="row">
-                                <div className="col-lg-12 col-md-12">
-                                    <label>Label</label>
-                                    <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            name="name" 
-                                            placeholder="Placeholder" 
-                                            className="form-control" 
-                                            value={contact.name}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.name && 'Name is required.'}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12 col-md-12">
-                                    <label>Label</label>
-                                    <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            name="email" 
-                                            placeholder="Placeholder" 
-                                            className="form-control" 
-                                            value={contact.email}
-                                            onChange={handleChange}
-                                            ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.email && 'Email is required.'}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <label>Label</label>
-                                    <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            name="number" 
-                                            placeholder="Placeholder" 
-                                            className="form-control" 
-                                            value={contact.number}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.number && 'Number is required.'}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <label>Label</label>
-                                    <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            name="subject" 
-                                            placeholder="Placeholder" 
-                                            className="form-control" 
-                                            value={contact.subject}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.subject && 'Subject is required.'}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <label>Label</label>
-                                    <div className="form-group">
-                                        <input 
-                                            type="text" 
-                                            name="subject" 
-                                            placeholder="Placeholder" 
-                                            className="form-control" 
-                                            value={contact.subject}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.subject && 'Subject is required.'}
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* <div className="col-lg-12 col-md-12">
-                                    <div className="form-group">
-                                        <textarea 
-                                            name="text" 
-                                            cols="30" 
-                                            rows="5" 
-                                            placeholder="Write your message..." 
-                                            className="form-control" 
-                                            value={contact.text}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
-                                        />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.text && 'Message is required.'}
-                                        </div>
-                                    </div> */}
-
-                                    {/* <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
-                                            By checking this, you agree to our <Link href="/term-condition"><a>Terms</a></Link> and <Link href="/privacy-policy"><a>Privacy policy</a></Link>.
-                                        </label>
-                                    </div> */}
-                                {/* </div> */}
-            
-                                <div className="col-lg-12 col-sm-12">
-                                    <button type="submit" className="btn  btn-contact-form">SUBMIT A REQUEST</button>
-                                </div>
-                            </div>
-                        </form> 
+                    <JotformEmbed src="https://form.jotformeu.com/230739176970061" />
                     </div>
                 </div>
             </div>
