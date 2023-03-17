@@ -14,24 +14,29 @@ const DesktopTeam = () => {
 
     const onSetActiveItem = (item) => {
         if (item !== active){
-          setActive(item);
+          
           if (item === 'item1'){
+            setActive('item1');
             setTitle("Grow with Our Proven Framework");
             setContent("Our Velocity Frameworks contain proven tools that our team of experts use to fast-scale revenue growth of brands.  We champion strategic planning and we enable brands to leverage on our vast cross-category experience in fast-scaling online businesses and building market champions.");
           }
           else if (item === 'item2'){
+            setActive('item2');
             setTitle("Leverage Our Technology");
             setContent("Leverage on our tech-enabled capabilities to unlock unprecedented levels of efficiency for your omnichannel.  Brands who work with us instantly get the advantage of lower inventory holding costs, reduced errors, higher conversion rates, and more efficient roll out of plans.");
           }
           else if (item === 'item3'){
+            setActive('item3');
             setTitle("Advanced Performance Marketing");
             setContent("Cutting edge marketing technology stack that provides an edge in performance marketing.  Our team of experts make use of social listening and other A.I. tools to help brands achieve their performance marketing objectives that translate to revenue growth.");
           }
           else if (item === 'item4'){
+            setActive('item4');
             setTitle("Fulfill Orders Better than On Time, All the Time, At Scale");
             setContent("Our network of strategically located modern fulfillment centers will enable your brand to automate order fulfillment and ensure customer delight.  We offer brands class-leading same day and next day delivery capability - a service that more and more consumers demand.");
           }
           else if (item === 'item5'){
+            setActive('item5');
             setTitle("Total Customer Satisfaction Management");
             setContent("Because we control the end-to-end processes involved in growing online businesses, we are able to develop a unique approach in Total Customer Satisfaction Management which has resulted in higher levels of positive customer reviews and repeat purchases.  We achieve this by doing the following: \n• Pre-sales Customer Engagement\n• After-sales Support\n• Product training\n• Seamless returns\n• Warranty Management");
           }
@@ -41,7 +46,7 @@ const DesktopTeam = () => {
             }
         }
         else {
-          setActive(''); // handle click on currently active item
+          setActive(item); // handle click on currently active item
         }
       };
         

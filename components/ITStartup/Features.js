@@ -61,7 +61,7 @@ const Features = () => {
                             <div className="container">
                                 <div className="ecomMarketing" ><img src='/images/eComMarketingv2.png' className='ecomMarketingImg' onClick={() => setShowModal(true)} />
                               </div>
-                                <div className="customerSupport" ><img src='/images/customerSupportv2.png' className='customerSupportImg' /></div>
+                                <div className="customerSupport" ><img src='/images/CustomerSupportv2.png' className='customerSupportImg' /></div>
                                 <div className="orderFulfillment" ><img src='/images/orderFulfillmentv2.png' className='orderFulfillmentImg' /></div>
                                 <div className="eCommerceStrategy" ><img src='/images/eCommerceStrategyv2.png' className='eCommerceStrategyImg' onClick={() => setShowModal(true)} /></div>
                               
