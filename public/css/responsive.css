@@ -594,7 +594,7 @@
     letter-spacing: 5px;
     font-weight: 700;
   }
-  .section-title .gocom-values-below span {
+  .section-title .gocom-values-below span.active {
     background: -webkit-linear-gradient(#57E49E, #00AAB9);
     -webkit-background-clip: text;
             background-clip: text;
