@@ -63,7 +63,7 @@ const OurMission = () => {
                             <h1 className='gocom-values-accountabilities text-center'>{title}</h1>
 							<p className='gocom-values-desc text-center'>{content}</p>										
                         </div>
-						<div class="text-center">
+						<div className="text-center">
 						<Link href="/contact">
 							<a className="join-with-us text-center">JOIN OUR TEAM</a>
 						</Link>

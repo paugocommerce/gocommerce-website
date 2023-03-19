@@ -1,5 +1,9 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .navbar-light .navbar-nav .nav-link:hover:after {
+    width: 100%;
+    background: none;
+}
   .footer-area .row .footer-end-menu p {
     color: #fff;
     font-size: 11px;
@@ -1283,6 +1287,7 @@
   }
   .about-image {
     margin-bottom: 45px;
+    margin-top: 15px;
   }
   .about-inner-area {
     margin-top: 0px;
