@@ -72,7 +72,7 @@ const Features = () => {
 						<div className="section-title">
 							<h2 className='our-mission text-center'>THE VELOCITY FLYWHEEL</h2>
 							
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} appElement={document.getElementById('root')} style={customStyles}>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}  style={customStyles}>
         <h2>{modalTitle}</h2>
         <p>{modalContent}</p>
         <button  onClick={closeModal}>Close Modal</button>
