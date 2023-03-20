@@ -87,16 +87,7 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-html,
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 body {
   font-family: "Montserrat";
   padding: 0;
