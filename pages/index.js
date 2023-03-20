@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import dynamic from 'next/dynamic';
 
 
+
 const mobile = require('is-mobile');
 
 const MobileContentNavbar = dynamic(() => mobile() ? import('@/components/_App/Navbar') : import('@/components/_App/DesktopNavbar'), { ssr: false })

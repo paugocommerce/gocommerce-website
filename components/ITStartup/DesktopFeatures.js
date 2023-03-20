@@ -9,33 +9,13 @@ import {
     AccordionItemButton
 } from 'react-accessible-accordion';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import Modal from '../Common/Modal';
+import Modal from 'react-modal';
+
 
 
 
 const DesktopFeatures = () => {
-    let subtitle;
-
-    const [showModal, setShowModal] = useState(false);
-
-    const [displayText1, setDisplayTest1] = useState('');
-
-    const handleClick = () => {
-        setDisplayTest1('Hello World');
-    }
-
-    // function openModal() {
-    //     setIsOpen(true);
-    // }
-
-    // function afterOpenModal() {
-    //     // references are now sync'd and can be accessed.
-        
-    // }
-
-    // function closeModal() {
-    //     setIsOpen(false);
-    // }
+   
     return (
        <div className="boxes-area">
          
@@ -47,6 +27,7 @@ const DesktopFeatures = () => {
                         <div className="section-title">
                            
                                 <h2 className='our-mission text-center'>OUR MISSION</h2>
+                               
                             
                             <div className='col-lg-8 offset-lg-2'>
                                 <h1 className='our-mission-below text-center'>Creating the <span>Easiest</span> and <span>Most Pleasurable Online</span> Shopping Experiences</h1>
@@ -55,8 +36,8 @@ const DesktopFeatures = () => {
 
                             <p className='our-mission-desc text-center'>From creating custom e-commerce websites to providing efficient solutions for managing an entire customer journey, GoCommerce has been helping marketing experts succeed. With our aid, you can focus on what you do best—growing your business</p>										
                         </div>
-						<div class="text-center">
-						<Link href="/contact">
+						<div className="text-center">
+						<Link href="/contact-us">
 							<a className=" grow-with-us text-center">ABOUT US</a>
 						</Link>
 						</div>
@@ -64,7 +45,7 @@ const DesktopFeatures = () => {
 						<div className="section-title">
 							<h2 className='our-mission text-center'>THE VELOCITY FLYWHEEL</h2>
 							
-                            <div class="container">
+                            <div className="container">
                                 
                                 <div className="col-lg-12 col-md-12">
                                 <div className="row">

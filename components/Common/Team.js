@@ -71,7 +71,7 @@ const Team = () => {
             
                 <div className="single-team">
                     <img 
-                        src='/images/lazada-award-2.png'
+                        src='/images/mobile-shopee-award.png'
                         className='lazada-award' 
                         alt="lazada-award" 
                     />

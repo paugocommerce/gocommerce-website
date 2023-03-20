@@ -19,6 +19,7 @@ import { ToastProvider } from 'react-toast-notifications'
 import { useStore } from '../store'
 import Head from 'next/head'
 
+
 export default function App({ Component, pageProps }) {
     const store = useStore(pageProps.initialReduxState)
 

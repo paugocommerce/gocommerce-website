@@ -273,6 +273,7 @@
     width: 245px;
     -webkit-animation: zoom-in-zoom-out3 2s ease-out infinite;
             animation: zoom-in-zoom-out3 2s ease-out infinite;
+    z-index: 999;
   }
   .section-title .container .customerSupport {
     position: absolute;

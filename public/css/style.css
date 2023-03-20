@@ -9802,6 +9802,9 @@ Go Top CSS
   color: #fff;
   margin-bottom: 15px;
 }
+.services-page .container .services-card .services-image-title > a:hover {
+  text-decoration: underline;
+}
 .gocommercex-main-banner {
   position: relative;
   height: 100%;
