@@ -32,8 +32,8 @@ export default function App({ Component, pageProps }) {
         >
             <Provider store={store}>
             <Head>
-            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      
             <meta property="og:title" content="GoCommerce" />
             <meta property="og:description" content="GoCommerce" /> 
             <meta property="og:type" content="ecommerce" />
