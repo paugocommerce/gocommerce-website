@@ -16,7 +16,16 @@ const Features = () => {
 
     const customStyles = {
         
-        overlay: {zIndex: 99999}
+        overlay: {zIndex: 99999, padding: '0px 15px', backgroundColor: 'rgba(0, 0, 0, 0.75)'},
+		content: {
+			top: '50%',
+			left: '50%',
+			right: 'auto',
+			bottom: 'auto',
+			marginRight: '-40%',
+			transform: 'translate(-50%, -50%)',
+			
+		  }
 	    
       };
 
@@ -73,9 +82,10 @@ const Features = () => {
 							<h2 className='our-mission text-center'>THE VELOCITY FLYWHEEL</h2>
 							
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}  style={customStyles}>
+	  <button className='modal-x-button'  onClick={closeModal}><Icon.XSquare /></button>
         <h2>{modalTitle}</h2>
         <p>{modalContent}</p>
-        <button  onClick={closeModal}>Close Modal</button>
+       
       </Modal>
 							{/* <img 
 								src='/images/Velocity-Wheel.png' 
